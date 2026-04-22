@@ -1,0 +1,1928 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOR Estudio · Estrategia de Posicionamiento Instagram 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+
+    :root {
+      --cream:  #F2EDE6;
+      --carbon: #2C2826;
+      --terra:  #C4956A;
+      --moss:   #7A8C6E;
+      --white:  #FAFAF8;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: var(--cream);
+      color: var(--carbon);
+      overflow-x: hidden;
+    }
+
+    /* ── PROGRESS BAR ── */
+    #progress-bar {
+      position: fixed;
+      top: 0; left: 0;
+      height: 3px;
+      width: 0%;
+      background: var(--terra);
+      z-index: 9999;
+      transition: width 0.08s linear;
+    }
+
+    /* ── SHARED ── */
+    .section-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 80px 32px;
+      position: relative;
+    }
+
+    .pill {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      border: 0.5px solid currentColor;
+      margin-bottom: 20px;
+    }
+
+    .accent-line {
+      width: 32px;
+      height: 2px;
+      background: var(--terra);
+      margin-bottom: 14px;
+    }
+
+    .deco-number {
+      font-family: 'Barlow', sans-serif;
+      font-size: 180px;
+      font-weight: 900;
+      opacity: 0.06;
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .section-title {
+      font-family: 'Barlow', sans-serif;
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 900;
+      line-height: 1.05;
+      margin-bottom: 8px;
+    }
+
+    .emotional {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(18px, 2.5vw, 26px);
+      color: var(--terra);
+      margin-bottom: 48px;
+      display: block;
+    }
+
+    /* ── FADE-IN ── */
+    .fi {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .fi.on { opacity: 1; transform: translateY(0); }
+
+    /* ── SECTION BACKGROUNDS ── */
+    .bg-cream  { background: var(--cream); }
+    .bg-carbon { background: var(--carbon); }
+    .bg-white  { background: var(--white); }
+
+    /* ════════════════════════════════════════
+       S1 – HERO
+       ════════════════════════════════════════ */
+    #hero { background: var(--cream); }
+
+    .hero-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 52px 32px 72px;
+      position: relative;
+    }
+
+    .hero-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
+
+    .logo-bor {
+      width: 54px; height: 54px;
+      border-radius: 50%;
+      border: 1px solid var(--carbon);
+      background: var(--cream);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 900; font-size: 17px;
+      color: var(--carbon);
+    }
+
+    .hero-display {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 900;
+      font-size: clamp(38px, 7vw, 76px);
+      line-height: 0.96;
+      color: var(--carbon);
+      margin-bottom: 20px;
+      max-width: 700px;
+    }
+
+    .hero-sub {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 300;
+      font-size: clamp(13px, 1.8vw, 16px);
+      color: var(--carbon);
+      opacity: 0.6;
+      margin-bottom: 36px;
+      letter-spacing: 0.04em;
+    }
+
+    .hero-divider {
+      width: 100%; height: 1px;
+      background: var(--terra);
+      margin-bottom: 28px;
+    }
+
+    .hero-stats {
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+
+    .hero-stat { flex: 1; padding: 0 20px; text-align: center; }
+    .hero-stat:first-child { padding-left: 0; text-align: left; }
+    .hero-stat:last-child  { padding-right: 0; text-align: right; }
+
+    .hero-stat-val {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 700; font-size: 13px;
+      color: var(--carbon);
+    }
+
+    .hero-stat-sep {
+      width: 1px; height: 28px;
+      background: var(--carbon); opacity: 0.18;
+    }
+
+    .hero-arrow {
+      display: flex;
+      justify-content: center;
+      margin-top: 52px;
+      animation: bounce 2s infinite;
+    }
+
+    .arrow-circle {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      border: 1px solid var(--carbon);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; color: var(--carbon); opacity: 0.45;
+    }
+
+    @keyframes bounce {
+      0%,100% { transform: translateY(0); }
+      50%      { transform: translateY(8px); }
+    }
+
+    /* ════════════════════════════════════════
+       S2 – ÍNDICE
+       ════════════════════════════════════════ */
+    #indice { background: var(--carbon); }
+
+    .index-lbl {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 300; font-size: 12px;
+      color: var(--cream); opacity: 0.45;
+      text-transform: uppercase; letter-spacing: 0.14em;
+      margin-bottom: 28px;
+    }
+
+    .index-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+    }
+
+    .index-card {
+      border: 0.5px solid rgba(242,237,230,0.15);
+      border-radius: 6px;
+      padding: 22px 22px 44px;
+      cursor: pointer;
+      position: relative;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .index-card:hover {
+      border-color: var(--terra);
+      transform: scale(1.02);
+    }
+
+    .ic-num  { font-weight: 700; font-size: 10px; color: var(--terra); letter-spacing: 0.1em; margin-bottom: 8px; }
+    .ic-title{ font-weight: 700; font-size: 15px; color: var(--cream); margin-bottom: 4px; }
+    .ic-desc { font-weight: 300; font-size: 11px; color: var(--cream); opacity: 0.45; }
+
+    .ic-arrow {
+      position: absolute; bottom: 14px; right: 14px;
+      width: 24px; height: 24px; border-radius: 50%;
+      border: 0.5px solid rgba(242,237,230,0.25);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; color: var(--cream); opacity: 0.45;
+    }
+
+    /* ════════════════════════════════════════
+       S3 – DIAGNÓSTICO
+       ════════════════════════════════════════ */
+    #diagnostico { background: var(--cream); }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 14px;
+      margin-bottom: 48px;
+    }
+
+    .metric-card {
+      background: var(--carbon);
+      border-radius: 6px;
+      padding: 28px 20px;
+      text-align: center;
+    }
+
+    .metric-val {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 900;
+      font-size: clamp(30px, 5vw, 50px);
+      color: var(--cream);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .metric-lbl {
+      font-size: 10px; font-weight: 300;
+      color: var(--terra); text-transform: uppercase;
+      letter-spacing: 0.1em;
+      display: block; margin-bottom: 6px;
+    }
+
+    .metric-note {
+      font-size: 10px; font-weight: 300;
+      color: var(--cream); opacity: 0.35;
+    }
+
+    .prob-title {
+      font-weight: 700; font-size: 10px;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--carbon); opacity: 0.5;
+      margin-bottom: 14px;
+    }
+
+    .prob-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .prob-card {
+      background: var(--white);
+      border-radius: 6px;
+      padding: 22px;
+      border: 0.5px solid rgba(44,40,38,0.09);
+    }
+
+    .prob-x    { font-size: 17px; color: #c0392b; margin-bottom: 8px; }
+    .prob-ttl  { font-weight: 700; font-size: 13px; color: var(--carbon); margin-bottom: 5px; }
+    .prob-desc { font-weight: 300; font-size: 11px; color: var(--carbon); opacity: 0.55; }
+
+    .concl {
+      border-left: 3px solid var(--terra);
+      padding: 18px 22px;
+      background: var(--white);
+      border-radius: 0 6px 6px 0;
+      font-weight: 400; font-size: 15px;
+      color: var(--carbon);
+    }
+
+    /* ════════════════════════════════════════
+       S4 – OBJETIVOS
+       ════════════════════════════════════════ */
+    #objetivos { background: var(--carbon); }
+
+    .main-obj {
+      border: 2px solid var(--terra);
+      border-radius: 6px;
+      padding: 38px;
+      margin-bottom: 44px;
+    }
+
+    .main-obj-star { font-size: 30px; color: var(--terra); display: block; margin-bottom: 14px; }
+
+    .main-obj-ttl {
+      font-weight: 700; font-size: clamp(16px, 2.4vw, 21px);
+      color: var(--cream); margin-bottom: 10px; line-height: 1.35;
+    }
+
+    .main-obj-desc {
+      font-weight: 300; font-size: 13px;
+      color: var(--cream); opacity: 0.65; line-height: 1.6;
+    }
+
+    .obj-sep { height: 1px; background: rgba(242,237,230,0.08); margin-bottom: 36px; }
+
+    .obj-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .obj-card {
+      background: rgba(242,237,230,0.04);
+      border: 0.5px solid rgba(242,237,230,0.09);
+      border-radius: 6px;
+      padding: 26px 22px;
+    }
+
+    .obj-badge {
+      display: inline-block;
+      font-size: 9px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      padding: 4px 12px; border-radius: 20px;
+      background: var(--terra); color: var(--white);
+      margin-bottom: 14px;
+    }
+
+    .obj-ttl {
+      font-weight: 900; font-size: 18px;
+      color: var(--cream); margin-bottom: 4px;
+    }
+
+    .obj-period {
+      font-size: 10px; font-weight: 300;
+      color: var(--terra); text-transform: uppercase;
+      letter-spacing: 0.1em; margin-bottom: 14px;
+    }
+
+    .obj-ul { list-style: none; padding: 0; }
+
+    .obj-ul li {
+      font-weight: 300; font-size: 12px;
+      color: var(--cream); opacity: 0.7;
+      padding: 5px 0;
+      border-bottom: 0.5px solid rgba(242,237,230,0.07);
+      display: flex; gap: 8px;
+    }
+
+    .obj-ul li::before { content: "✓"; color: var(--terra); font-size: 10px; flex-shrink: 0; margin-top: 1px; }
+
+    .kpi-row {
+      display: grid; grid-template-columns: repeat(4,1fr);
+      background: rgba(0,0,0,0.18);
+      border-radius: 6px; overflow: hidden;
+    }
+
+    .kpi-cell {
+      padding: 18px 12px; text-align: center;
+      border-right: 0.5px solid rgba(242,237,230,0.09);
+    }
+    .kpi-cell:last-child { border-right: none; }
+
+    .kpi-lbl {
+      font-weight: 300; font-size: 10px;
+      color: var(--cream); opacity: 0.45;
+      text-transform: uppercase; letter-spacing: 0.07em;
+    }
+
+    /* ════════════════════════════════════════
+       S5 – EL MERCADO
+       ════════════════════════════════════════ */
+    #mercado { background: var(--cream); }
+
+    .exp-card {
+      border: 0.5px solid rgba(44,40,38,0.13);
+      border-radius: 6px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .exp-header {
+      padding: 18px 22px;
+      display: flex; align-items: center; justify-content: space-between;
+      cursor: pointer;
+      background: var(--white);
+      transition: background 0.2s;
+    }
+
+    .exp-header:hover { background: rgba(196,149,106,0.07); }
+
+    .exp-ttl  { font-weight: 700; font-size: 14px; color: var(--carbon); }
+    .exp-sub  { font-weight: 300; font-size: 11px; color: var(--carbon); opacity: 0.45; margin-top: 2px; }
+
+    .exp-arrow {
+      width: 28px; height: 28px; border-radius: 50%;
+      border: 0.5px solid rgba(44,40,38,0.25);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; color: var(--carbon);
+      transition: transform 0.3s; flex-shrink: 0;
+    }
+
+    .exp-arrow.open { transform: rotate(180deg); }
+
+    .exp-body {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .exp-body.open { max-height: 500px; }
+
+    .exp-content {
+      padding: 22px;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      border-top: 0.5px solid rgba(44,40,38,0.08);
+      background: var(--white);
+    }
+
+    .exp-col-ttl {
+      font-weight: 700; font-size: 9px;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      margin-bottom: 10px;
+    }
+
+    .exp-col-ttl.g { color: #5a8a5a; }
+    .exp-col-ttl.r { color: #b94040; }
+
+    .exp-ul { list-style: none; padding: 0; }
+
+    .exp-ul li {
+      font-weight: 300; font-size: 12px;
+      color: var(--carbon);
+      padding: 4px 0;
+      border-bottom: 0.5px solid rgba(44,40,38,0.06);
+    }
+
+    .exp-ul.good li::before { content: "✓ "; color: #5a8a5a; }
+    .exp-ul.bad  li::before { content: "✗ "; color: #b94040; }
+
+    .insight-blk {
+      background: var(--carbon);
+      border-radius: 6px;
+      padding: 48px 40px;
+      margin: 36px 0;
+      text-align: center;
+    }
+
+    .insight-main {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 300;
+      font-size: clamp(20px, 3.5vw, 30px);
+      color: var(--cream); margin-bottom: 8px;
+    }
+
+    .insight-emo {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic; font-weight: 300;
+      font-size: clamp(18px, 3vw, 26px);
+      color: var(--terra);
+    }
+
+    .opp-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+    }
+
+    .opp-item { border-top: 2px solid var(--terra); padding-top: 14px; }
+    .opp-ttl  { font-weight: 700; font-size: 13px; color: var(--carbon); margin-bottom: 5px; }
+    .opp-desc { font-weight: 300; font-size: 11px; color: var(--carbon); opacity: 0.55; }
+
+    /* ════════════════════════════════════════
+       S6 – GIRO ESTRATÉGICO
+       ════════════════════════════════════════ */
+    #giro {
+      background: var(--carbon);
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .giro-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 96px 32px 104px;
+    }
+
+    .giro-before {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .giro-before.on { opacity: 1; transform: translateY(0); }
+
+    .giro-before-lbl {
+      font-weight: 300; font-size: 10px;
+      text-transform: uppercase; letter-spacing: 0.16em;
+      color: var(--cream); opacity: 0.3;
+      margin-bottom: 10px;
+    }
+
+    .giro-before-ph {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 300;
+      font-size: clamp(20px, 3.2vw, 34px);
+      color: var(--cream);
+      opacity: 0.2;
+      line-height: 1.1;
+      text-decoration: line-through;
+      text-decoration-color: rgba(196,149,106,0.5);
+      text-decoration-thickness: 1px;
+    }
+
+    .giro-divider {
+      display: flex; align-items: center; gap: 18px;
+      margin: 44px 0;
+      opacity: 0;
+      transition: opacity 0.5s ease 0.3s;
+    }
+    .giro-divider.on { opacity: 1; }
+
+    .giro-div-line { flex: 1; height: 1px; background: var(--terra); opacity: 0.35; }
+
+    .giro-div-sym {
+      width: 38px; height: 38px; border-radius: 50%;
+      border: 1px solid var(--terra);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 15px; color: var(--terra);
+      flex-shrink: 0;
+    }
+
+    .giro-after {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease 0.45s, transform 0.65s ease 0.45s;
+    }
+    .giro-after.on { opacity: 1; transform: translateY(0); }
+
+    .giro-after-lbl {
+      font-weight: 300; font-size: 10px;
+      text-transform: uppercase; letter-spacing: 0.16em;
+      color: var(--terra);
+      margin-bottom: 12px;
+    }
+
+    .giro-after-ph {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 900;
+      font-size: clamp(36px, 6.5vw, 72px);
+      color: var(--terra);
+      line-height: 1.02;
+    }
+
+    .giro-closer {
+      margin-top: 72px;
+      padding-top: 56px;
+      border-top: 1px solid rgba(196,149,106,0.18);
+      text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease 0.75s, transform 0.7s ease 0.75s;
+    }
+    .giro-closer.on { opacity: 1; transform: translateY(0); }
+
+    .giro-closer-ph {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 900;
+      font-size: clamp(40px, 8vw, 88px);
+      color: var(--cream);
+      line-height: 0.97;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+    }
+
+    .giro-closer-star {
+      font-size: 22px; color: var(--terra);
+      display: inline-block;
+      animation: spin-slow 8s linear infinite;
+    }
+
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    /* ════════════════════════════════════════
+       S7 – ESTRATEGIA
+       ════════════════════════════════════════ */
+    #estrategia { background: var(--carbon); }
+
+    .buyer-card {
+      display: grid; grid-template-columns: 1fr 1fr;
+      border-radius: 6px; overflow: hidden;
+      border: 0.5px solid rgba(242,237,230,0.09);
+      margin-bottom: 44px;
+    }
+
+    .buyer-col {
+      padding: 30px;
+      background: rgba(242,237,230,0.04);
+    }
+
+    .buyer-col:first-child {
+      border-right: 0.5px solid rgba(242,237,230,0.09);
+    }
+
+    .buyer-item { margin-bottom: 16px; }
+
+    .bk {
+      font-weight: 300; font-size: 9px;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--terra); display: block; margin-bottom: 2px;
+    }
+
+    .bv {
+      font-weight: 400; font-size: 13px;
+      color: var(--cream);
+    }
+
+    .buyer-sub {
+      font-weight: 700; font-size: 10px;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--terra); margin-bottom: 10px;
+    }
+
+    .buyer-ul { list-style: none; padding: 0; margin-bottom: 20px; }
+
+    .buyer-ul li {
+      font-weight: 300; font-size: 12px;
+      color: var(--cream); opacity: 0.75;
+      padding: 4px 0;
+    }
+
+    .pilares-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 10px; margin-bottom: 36px;
+    }
+
+    .pilar-card {
+      border: 0.5px solid rgba(242,237,230,0.09);
+      border-radius: 6px; overflow: hidden;
+    }
+
+    .pilar-card:nth-child(5) { grid-column: 1 / -1; }
+
+    .pilar-hd {
+      padding: 16px 18px;
+      display: flex; align-items: center;
+      cursor: pointer;
+      background: rgba(242,237,230,0.03);
+      transition: background 0.2s;
+    }
+
+    .pilar-hd:hover { background: rgba(196,149,106,0.1); }
+
+    .pilar-num { font-weight: 900; font-size: 10px; color: var(--terra); margin-right: 10px; }
+    .pilar-ln  { width: 18px; height: 1.5px; background: var(--terra); margin-right: 10px; flex-shrink: 0; }
+    .pilar-nm  { font-weight: 700; font-size: 13px; color: var(--cream); flex: 1; }
+    .pilar-pct { font-weight: 300; font-size: 10px; color: var(--terra); margin-right: 10px; }
+
+    .p-arrow {
+      width: 24px; height: 24px; border-radius: 50%;
+      border: 0.5px solid rgba(242,237,230,0.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; color: var(--cream);
+      transition: transform 0.3s;
+    }
+
+    .p-arrow.open { transform: rotate(180deg); }
+
+    .pilar-bd {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .pilar-bd.open { max-height: 400px; }
+
+    .pilar-ct {
+      padding: 14px 18px;
+      border-top: 0.5px solid rgba(242,237,230,0.07);
+      background: rgba(0,0,0,0.14);
+    }
+
+    .pilar-desc { font-weight: 300; font-size: 12px; color: var(--cream); opacity: 0.65; margin-bottom: 8px; line-height: 1.5; }
+    .pilar-ex   { font-weight: 300; font-size: 11px; color: var(--terra); opacity: 0.8; line-height: 1.5; }
+
+    .rules-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 10px;
+    }
+
+    .rule-item {
+      display: flex; gap: 10px;
+      padding: 12px 14px;
+      background: rgba(242,237,230,0.04);
+      border-radius: 6px;
+    }
+
+    .r-chk  { color: var(--terra); font-size: 13px; flex-shrink: 0; }
+    .r-text { font-weight: 300; font-size: 12px; color: var(--cream); opacity: 0.75; }
+
+    /* ════════════════════════════════════════
+       S8 – ROADMAP
+       ════════════════════════════════════════ */
+    #roadmap { background: var(--cream); }
+
+    .tl {
+      position: relative;
+      padding-left: 36px;
+      margin-top: 36px;
+    }
+
+    .tl::before {
+      content: '';
+      position: absolute;
+      left: 6px; top: 16px; bottom: 16px;
+      width: 2px; background: var(--terra);
+    }
+
+    .tl-item { position: relative; margin-bottom: 0; }
+
+    .tl-dot {
+      position: absolute;
+      left: -30px; top: 22px;
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: var(--terra);
+      border: 2px solid var(--cream);
+      box-shadow: 0 0 0 2px var(--terra);
+    }
+
+    .tl-box {
+      padding: 22px 26px;
+      background: var(--white);
+      border: 0.5px solid rgba(44,40,38,0.09);
+      border-radius: 6px;
+      margin-bottom: 14px;
+      transition: background 0.2s;
+    }
+
+    .tl-box:hover { background: rgba(196,149,106,0.07); }
+
+    .tl-phase {
+      font-weight: 700; font-size: 9px;
+      text-transform: uppercase; letter-spacing: 0.14em;
+      color: var(--terra); margin-bottom: 4px;
+    }
+
+    .tl-ttl {
+      font-weight: 900; font-size: 22px;
+      color: var(--carbon); margin-bottom: 6px;
+    }
+
+    .tl-desc {
+      font-weight: 300; font-size: 13px;
+      color: var(--carbon); opacity: 0.55;
+    }
+
+    .tl-badge {
+      display: inline-block; margin-top: 10px;
+      font-size: 9px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      padding: 4px 12px; border-radius: 20px;
+      background: var(--carbon); color: var(--cream);
+    }
+
+    /* ════════════════════════════════════════
+       S9 – ONBOARDING
+       ════════════════════════════════════════ */
+    #onboarding { background: var(--carbon); }
+
+    .onb-card {
+      border: 2px solid var(--terra);
+      border-radius: 6px;
+      padding: 38px;
+      margin-top: 28px;
+    }
+
+    .onb-ul { list-style: none; padding: 0; margin-bottom: 28px; }
+
+    .onb-ul li {
+      font-weight: 300; font-size: 13px;
+      color: var(--cream);
+      padding: 9px 0;
+      border-bottom: 0.5px solid rgba(242,237,230,0.09);
+      display: flex; gap: 10px;
+    }
+
+    .onb-ul li::before { content: "✓"; color: var(--terra); font-size: 12px; flex-shrink: 0; }
+
+    .onb-price {
+      font-weight: 900;
+      font-size: clamp(28px, 5vw, 46px);
+      color: var(--cream); margin-bottom: 4px;
+    }
+
+    .onb-note {
+      font-weight: 300; font-size: 10px;
+      color: var(--cream); opacity: 0.35;
+      letter-spacing: 0.06em;
+    }
+
+    /* ════════════════════════════════════════
+       S10 – PACKS
+       ════════════════════════════════════════ */
+    #propuesta { background: var(--cream); }
+
+    .packs-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 18px; margin-bottom: 20px;
+    }
+
+    .pack {
+      background: var(--white);
+      border-radius: 6px;
+      padding: 30px 26px;
+      border: 1px solid rgba(44,40,38,0.08);
+      transition: transform 0.2s, border-color 0.2s;
+      position: relative;
+    }
+
+    .pack:hover { transform: scale(1.02); border-color: var(--terra); }
+    .pack.feat  { border: 2px solid var(--terra); }
+
+    .pack-badge {
+      position: absolute; top: -11px; left: 50%; transform: translateX(-50%);
+      background: var(--terra); color: var(--white);
+      font-size: 9px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 4px 14px; border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    .pack-lbl {
+      font-weight: 300; font-size: 9px;
+      text-transform: uppercase; letter-spacing: 0.14em;
+      color: var(--carbon); opacity: 0.45; margin-bottom: 4px;
+    }
+
+    .pack-nm {
+      font-weight: 900; font-size: 34px;
+      color: var(--carbon); margin-bottom: 6px;
+    }
+
+    .pack-cnt {
+      font-weight: 300; font-size: 11px;
+      color: var(--carbon); opacity: 0.55;
+      padding-bottom: 18px; margin-bottom: 18px;
+      border-bottom: 0.5px solid rgba(44,40,38,0.09);
+    }
+
+    .pack-price { font-weight: 900; font-size: 20px; color: var(--carbon); margin-bottom: 3px; }
+    .pack-iva   { font-weight: 300; font-size: 10px; color: var(--carbon); opacity: 0.35; margin-bottom: 18px; }
+
+    .pack-ul { list-style: none; padding: 0; margin-bottom: 24px; }
+
+    .pack-ul li {
+      font-weight: 300; font-size: 11px;
+      color: var(--carbon);
+      padding: 5px 0;
+      border-bottom: 0.5px solid rgba(44,40,38,0.05);
+      display: flex; gap: 7px;
+    }
+
+    .pack-ul li::before { content: "✓"; color: var(--terra); font-size: 10px; flex-shrink: 0; }
+
+    .pack-btn {
+      width: 100%; padding: 11px 18px;
+      background: transparent;
+      border: 1px solid var(--carbon);
+      border-radius: 4px;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 700; font-size: 12px;
+      color: var(--carbon); cursor: pointer;
+      letter-spacing: 0.05em;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+
+    .pack-btn:hover { background: var(--carbon); color: var(--cream); }
+
+    .pack.feat .pack-btn {
+      background: var(--terra); border-color: var(--terra); color: var(--white);
+    }
+
+    .pack.feat .pack-btn:hover { background: #b8865e; }
+
+    .pack-msg {
+      display: none;
+      font-size: 11px; font-weight: 400;
+      color: var(--terra); text-align: center;
+      margin-top: 10px; padding: 9px;
+      border: 0.5px solid var(--terra);
+      border-radius: 4px;
+    }
+
+    .pack-note {
+      font-weight: 300; font-size: 11px;
+      color: var(--carbon); opacity: 0.4;
+      text-align: center;
+    }
+
+    /* ════════════════════════════════════════
+       S11 – CIERRE
+       ════════════════════════════════════════ */
+    #cierre { background: var(--carbon); }
+
+    .steps-row {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 24px; margin-bottom: 48px;
+    }
+
+    .step-num  { font-weight: 900; font-size: 46px; color: var(--terra); opacity: 0.65; line-height: 1; margin-bottom: 10px; }
+    .step-text { font-weight: 300; font-size: 13px; color: var(--cream); opacity: 0.75; line-height: 1.5; }
+
+    .cierre-sep { height: 1px; background: var(--terra); opacity: 0.35; margin-bottom: 52px; }
+
+    .cierre-quote { text-align: center; }
+
+    .cierre-ph {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic; font-weight: 300;
+      font-size: clamp(22px, 4vw, 38px);
+      color: var(--terra);
+      display: block; margin-bottom: 28px;
+    }
+
+    .cierre-contact {
+      display: flex; align-items: center;
+      justify-content: center;
+      gap: 24px; flex-wrap: wrap;
+    }
+
+    .ct-item { font-weight: 300; font-size: 12px; color: var(--cream); opacity: 0.5; letter-spacing: 0.05em; }
+    .ct-sep  { width: 1px; height: 14px; background: var(--cream); opacity: 0.2; }
+
+    /* ════════════════════════════════════════
+       RESPONSIVE
+       ════════════════════════════════════════ */
+    @media (max-width: 680px) {
+      .section-inner { padding: 56px 20px; }
+
+      .metric-grid,
+      .prob-grid,
+      .packs-grid,
+      .steps-row,
+      .buyer-card,
+      .pilares-grid,
+      .rules-grid,
+      .kpi-row,
+      .exp-content,
+      .opp-grid,
+      .obj-grid { grid-template-columns: 1fr; }
+
+      .pilar-card:nth-child(5) { grid-column: auto; }
+
+      .hero-stats { flex-direction: column; gap: 12px; }
+      .hero-stat  { text-align: center !important; padding: 0; }
+      .hero-stat-sep { width: 28px; height: 1px; }
+
+      .kpi-cell { border-right: none; border-bottom: 0.5px solid rgba(242,237,230,0.08); }
+      .kpi-cell:last-child { border-bottom: none; }
+
+      .tl { padding-left: 26px; }
+      .tl-dot { left: -22px; }
+
+      .giro-wrap { padding: 72px 20px 80px; }
+      .giro-closer-ph { font-size: clamp(36px, 10vw, 60px); }
+
+      .deco-number { font-size: 100px; right: 10px; }
+    }
+
+    /* ════════════════════════════════════════
+       PRINT / PDF  —  FLUJO CONTINUO MOBILE
+       ════════════════════════════════════════ */
+    @media print {
+
+      /* ── A4 portrait, márgenes verticales mínimos ── */
+      @page { size: A4 portrait; margin: 10mm 0; }
+
+      /* ── Colores exactos ── */
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      /* ── Sin animaciones ni transiciones ── */
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+
+      /* ── Hacer visibles todos los fade-in ── */
+      .fi,
+      .giro-before, .giro-divider, .giro-after, .giro-closer {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+
+      /* ── Mostrar todo el contenido expandible ── */
+      .exp-body {
+        display: block !important;
+        max-height: none !important;
+        overflow: visible !important;
+      }
+
+      .pilar-bd {
+        display: block !important;
+        max-height: none !important;
+        overflow: visible !important;
+      }
+
+      /* ── Ocultar elementos de UI no imprimibles ── */
+      #progress-bar,
+      .hero-arrow,
+      .pack-msg,
+      .exp-arrow,
+      .p-arrow,
+      .ic-arrow { display: none !important; }
+
+      /* ── Flujo continuo: sin saltos de página forzados ── */
+      section {
+        page-break-before: auto !important;
+        break-before: auto !important;
+      }
+
+      /* ── Layout tipo mobile: columna estrecha centrada ── */
+      body {
+        width: 420px;
+        margin: 0 auto;
+      }
+
+      .section-inner,
+      .hero-wrap,
+      .giro-wrap {
+        max-width: 100% !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-top: 48px !important;
+        padding-bottom: 56px !important;
+      }
+
+      /* ── Todos los grids → columna única ── */
+      .metric-grid,
+      .prob-grid,
+      .packs-grid,
+      .steps-row,
+      .pilares-grid,
+      .rules-grid,
+      .exp-content,
+      .opp-grid,
+      .obj-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .buyer-card {
+        display: block !important;
+      }
+
+      .buyer-col:first-child {
+        border-right: none !important;
+        border-bottom: 0.5px solid rgba(242,237,230,0.09) !important;
+      }
+
+      .index-grid {
+        grid-template-columns: 1fr 1fr !important;
+      }
+
+      .kpi-row {
+        display: block !important;
+      }
+
+      .pilar-card:nth-child(5) { grid-column: auto !important; }
+
+      /* ── Hero stats vertical ── */
+      .hero-stats { flex-direction: column !important; gap: 12px !important; }
+      .hero-stat  { text-align: center !important; padding: 0 !important; }
+      .hero-stat-sep { width: 28px !important; height: 1px !important; }
+
+      /* ── KPI cells: bordes horizontales ── */
+      .kpi-cell {
+        border-right: none !important;
+        border-bottom: 0.5px solid rgba(242,237,230,0.08) !important;
+      }
+      .kpi-cell:last-child { border-bottom: none !important; }
+
+      /* ── Timeline ── */
+      .tl { padding-left: 26px !important; }
+      .tl-dot { left: -22px !important; }
+
+      /* ── Números decorativos ── */
+      .deco-number { font-size: 100px !important; right: 10px !important; }
+
+      /* ── Evitar cortes solo dentro de cards individuales ── */
+      .metric-card, .prob-card, .obj-card, .index-card,
+      .exp-card, .pilar-card, .tl-box, .pack,
+      .onb-card, .main-obj, .insight-blk,
+      .opp-item, .rule-item,
+      h1, h2, h3 {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="progress-bar"></div>
+
+  <!-- ════════════════════════════════════
+       S1 – HERO
+       ════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-wrap">
+      <div class="hero-top fi">
+        <div class="logo-bor">Bör</div>
+        <span class="pill" style="color:var(--carbon);">Propuesta estratégica · 2026</span>
+      </div>
+      <h1 class="hero-display fi">Estrategia de posicionamiento Instagram</h1>
+      <p class="hero-sub fi">BOR Estudio · La Plata · Gonnet · City Bell</p>
+      <div class="hero-divider fi"></div>
+      <div class="hero-stats fi">
+        <div class="hero-stat"><div class="hero-stat-val">7.185 seguidores</div></div>
+        <div class="hero-stat-sep"></div>
+        <div class="hero-stat"><div class="hero-stat-val">+10 años de trayectoria</div></div>
+        <div class="hero-stat-sep"></div>
+        <div class="hero-stat"><div class="hero-stat-val">Mayo 2026</div></div>
+      </div>
+      <div class="hero-arrow fi"><div class="arrow-circle">↓</div></div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       S2 – ÍNDICE
+       ════════════════════════════════════ -->
+  <section id="indice" class="bg-carbon">
+    <div class="section-inner">
+      <p class="index-lbl fi">En esta propuesta</p>
+      <div class="index-grid fi">
+        <div class="index-card" onclick="goTo('diagnostico')">
+          <div class="ic-num">01</div>
+          <div class="ic-title">Diagnóstico</div>
+          <div class="ic-desc">dónde estamos hoy</div>
+          <div class="ic-arrow">↗</div>
+        </div>
+        <div class="index-card" onclick="goTo('objetivos')">
+          <div class="ic-num">02</div>
+          <div class="ic-title">Objetivos</div>
+          <div class="ic-desc">a dónde queremos llegar</div>
+          <div class="ic-arrow">↗</div>
+        </div>
+        <div class="index-card" onclick="goTo('mercado')">
+          <div class="ic-num">03</div>
+          <div class="ic-title">El mercado</div>
+          <div class="ic-desc">la oportunidad sin explotar</div>
+          <div class="ic-arrow">↗</div>
+        </div>
+        <div class="index-card" onclick="goTo('estrategia')">
+          <div class="ic-num">04</div>
+          <div class="ic-title">La estrategia</div>
+          <div class="ic-desc">cómo vamos a posicionarnos</div>
+          <div class="ic-arrow">↗</div>
+        </div>
+        <div class="index-card" onclick="goTo('propuesta')">
+          <div class="ic-num">05</div>
+          <div class="ic-title">La propuesta</div>
+          <div class="ic-desc">packs y precios</div>
+          <div class="ic-arrow">↗</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       S3 – DIAGNÓSTICO
+       ════════════════════════════════════ -->
+  <section id="diagnostico" class="bg-cream">
+    <div class="section-inner">
+      <div class="deco-number" style="color:var(--carbon);">01</div>
+
+      <div class="accent-line fi"></div>
+      <span class="pill fi" style="color:var(--carbon);">Diagnóstico · Situación actual</span>
+      <h2 class="section-title fi" style="color:var(--carbon);margin-bottom:36px;">Dónde estás hoy</h2>
+
+      <div class="metric-grid fi">
+        <div class="metric-card">
+          <span class="metric-val" data-target="7185">0</span>
+          <span class="metric-lbl">seguidores actuales</span>
+          <span class="metric-note">base sólida local</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-val" data-target="479">0</span>
+          <span class="metric-lbl">publicaciones</span>
+          <span class="metric-note">alto volumen, baja cohesión</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-val" data-target="10" data-prefix="+">0</span>
+          <span class="metric-lbl">años de trayectoria</span>
+          <span class="metric-note">aval real en el mercado</span>
+        </div>
+      </div>
+
+      <p class="prob-title fi">Lo que no está funcionando</p>
+      <div class="prob-grid fi">
+        <div class="prob-card">
+          <div class="prob-x">✗</div>
+          <div class="prob-ttl">Feed sin coherencia visual</div>
+          <div class="prob-desc">Mezcla de estilos, logos de proyectos, planos técnicos</div>
+        </div>
+        <div class="prob-card">
+          <div class="prob-x">✗</div>
+          <div class="prob-ttl">Contenido sin narrativa</div>
+          <div class="prob-desc">Fotos de avance sin historia ni emoción</div>
+        </div>
+        <div class="prob-card">
+          <div class="prob-x">✗</div>
+          <div class="prob-ttl">Sin foco en el buyer persona</div>
+          <div class="prob-desc">Nadie le habla a la mujer de 41–55 años</div>
+        </div>
+      </div>
+
+      <div class="concl fi">La base está. Lo que falta es estrategia y dirección.</div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       S4 – OBJETIVOS
+       ════════════════════════════════════ -->
+  <section id="objetivos" class="bg-carbon">
+    <div class="section-inner">
+      <div class="deco-number" style="color:var(--cream);">02</div>
+
+      <div class="accent-line fi"></div>
+      <span class="pill fi" style="color:var(--cream);border-color:rgba(242,237,230,0.35);">Objetivos · 2026</span>
+      <h2 class="section-title fi" style="color:var(--cream);margin-bottom:10px;">¿A dónde queremos llegar?</h2>
+      <span class="emotional fi">No más posts por publicar. Contenido con propósito.</span>
+
+      <div class="main-obj fi">
+        <span class="main-obj-star">✳</span>
+        <div class="main-obj-ttl">Posicionar BOR como la marca de referencia en diseño y desarrollo inmobiliario en La Plata, Gonnet y City Bell</div>
+        <div class="main-obj-desc">Conectando especialmente con mujeres que lideran la decisión de construir y buscan una experiencia sin complicaciones.</div>
+      </div>
+
+      <div class="obj-sep"></div>
+
+      <div class="obj-grid fi">
+        <div class="obj-card">
+          <span class="obj-badge">1 mes</span>
+          <div class="obj-ttl">Ordenar la casa</div>
+          <div class="obj-period">Corto plazo · Mayo 2026</div>
+          <ul class="obj-ul">
+            <li>Feed con coherencia visual</li>
+            <li>Guía de estilo aplicada</li>
+            <li>Plantillas Canva funcionando</li>
+            <li>Comunidad existente re-enganchada</li>
+          </ul>
+        </div>
+        <div class="obj-card">
+          <span class="obj-badge" style="background:rgba(196,149,106,0.65);">6 meses</span>
+          <div class="obj-ttl">Crecer con estrategia</div>
+          <div class="obj-period">Mediano plazo · Jun–Dic 2026</div>
+          <ul class="obj-ul">
+            <li>+500 seguidores calificados</li>
+            <li>5+ consultas orgánicas por mes</li>
+            <li>Reels con alcance sostenido</li>
+            <li>BOR reconocible por su estética en La Plata</li>
+          </ul>
+        </div>
+        <div class="obj-card">
+          <span class="obj-badge" style="background:rgba(196,149,106,0.4);">12 meses</span>
+          <div class="obj-ttl">Convertir y lanzar</div>
+          <div class="obj-period">Largo plazo · Abr 2027</div>
+          <ul class="obj-ul">
+            <li>Campaña lanzamiento 2 casas nuevas</li>
+            <li>Base de prospectos lista</li>
+            <li>Instagram como canal activo de negocio</li>
+            <li>Marca que enamora antes de la consulta</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="kpi-row fi">
+        <div class="kpi-cell"><div class="kpi-lbl">Seguidores nuevos/mes</div></div>
+        <div class="kpi-cell"><div class="kpi-lbl">Alcance de Reels</div></div>
+        <div class="kpi-cell"><div class="kpi-lbl">Posts guardados</div></div>
+        <div class="kpi-cell"><div class="kpi-lbl">DMs recibidos</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       S5 – EL MERCADO
+       ════════════════════════════════════ -->
+  <section id="mercado" class="bg-cream">
+    <div class="section-inner">
+      <div class="deco-number" style="color:var(--carbon);">03</div>
+
+      <div class="accent-line fi"></div>
+      <span class="pill fi" style="color:var(--carbon);">Análisis de competencia</span>
+      <h2 class="section-title fi" style="color:var(--carbon);margin-bottom:36px;">Cómo comunica la competencia</h2>
+
+      <div class="fi">
+        <div class="exp-card">
+          <div class="exp-header" onclick="toggleExp(this)">
+            <div>
+              <div class="exp-ttl">Premat Architects</div>
+              <div class="exp-sub">Desarrollo + construcción · Competidor directo local</div>
+            </div>
+            <div class="exp-arrow">↓</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-content">
+              <div>
+                <div class="exp-col-ttl g">Lo que hacen bien</div>
+                <ul class="exp-ul good">
+                  <li>Proyectos concretos y propuesta clara</li>
+                  <li>CTA directo y accesible</li>
+                  <li>"Compramos + construimos + vendemos"</li>
+                </ul>
+              </div>
+              <div>
+                <div class="exp-col-ttl r">Lo que les falta</div>
+                <ul class="exp-ul bad">
+                  <li>No explican el proceso → genera distancia</li>
+                  <li>Comunicación genérica y poco emocional</li>
+                  <li>Sin enfoque en experiencia del cliente</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header" onclick="toggleExp(this)">
+            <div>
+              <div class="exp-ttl">Estudio MASEA</div>
+              <div class="exp-sub">Arquitectura + interiorismo · Aspiracional y visual</div>
+            </div>
+            <div class="exp-arrow">↓</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-content">
+              <div>
+                <div class="exp-col-ttl g">Lo que hacen bien</div>
+                <ul class="exp-ul good">
+                  <li>Muy buen contenido visual</li>
+                  <li>Muestran transformación real</li>
+                  <li>Generan deseo aspiracional</li>
+                </ul>
+              </div>
+              <div>
+                <div class="exp-col-ttl r">Lo que les falta</div>
+                <ul class="exp-ul bad">
+                  <li>No queda claro si es llave en mano</li>
+                  <li>Mucho diseño, poco "resolverte la vida"</li>
+                  <li>Sin foco en inversión o seguridad</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header" onclick="toggleExp(this)">
+            <div>
+              <div class="exp-ttl">Gianserra Lima Arquitectos</div>
+              <div class="exp-sub">Servicios de arquitectura · Imagen seria y profesional</div>
+            </div>
+            <div class="exp-arrow">↓</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-content">
+              <div>
+                <div class="exp-col-ttl g">Lo que hacen bien</div>
+                <ul class="exp-ul good">
+                  <li>Posicionamiento profesional sólido</li>
+                  <li>Gran volumen de trabajos</li>
+                  <li>Imagen de estudio serio</li>
+                </ul>
+              </div>
+              <div>
+                <div class="exp-col-ttl r">Lo que les falta</div>
+                <ul class="exp-ul bad">
+                  <li>Comunicación fría y poco diferenciada</li>
+                  <li>No simplifican el proceso</li>
+                  <li>Sin propuesta de valor clara</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="insight-blk fi">
+        <p class="insight-main">Todos compiten en estética.</p>
+        <p class="insight-emo">Nadie compite en experiencia.</p>
+      </div>
+
+      <div class="opp-grid fi">
+        <div class="opp-item">
+          <div class="opp-ttl">Mostrar el proceso</div>
+          <div class="opp-desc">Nadie explica cómo es trabajar con ellos</div>
+        </div>
+        <div class="opp-item">
+          <div class="opp-ttl">Vender tranquilidad</div>
+          <div class="opp-desc">Todos venden casas, nadie vende paz mental</div>
+        </div>
+        <div class="opp-item">
+          <div class="opp-ttl">Hablarle a ellas</div>
+          <div class="opp-desc">El nicho femenino 41–55 no tiene dueño</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       S6 – GIRO ESTRATÉGICO
+       ════════════════════════════════════ -->
+  <section id="giro">
+    <div class="giro-wrap">
+      <span class="pill" style="color:rgba(242,237,230,0.35);border-color:rgba(242,237,230,0.18);">El giro estratégico</span>
+
+      <div class="giro-before" id="giro-trigger">
+        <div class="giro-before-lbl">Lo que hacen todos</div>
+        <div class="giro-before-ph">"Mirá qué linda casa hago"</div>
+      </div>
+
+      <div class="giro-divider" id="giro-div">
+        <div class="giro-div-line"></div>
+        <div class="giro-div-sym">↓</div>
+        <div class="giro-div-line"></div>
+      </div>
+
+      <div class="giro-after" id="giro-after">
+        <div class="giro-after-lbl">Lo que puede hacer BOR</div>
+        <div class="giro-after-ph">"Mirá lo fácil que hago<br>que tengas tu casa"</div>
+      </div>
+
+      <div class="giro-closer" id="giro-closer">
+        <div class="giro-closer-ph">Ese giro<br>lo cambia todo.</div>
+        <span class="giro-closer-star">✳</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       S7 – ESTRATEGIA
+       ════════════════════════════════════ -->
+  <section id="estrategia" class="bg-carbon">
+    <div class="section-inner">
+      <div class="deco-number" style="color:var(--cream);">04</div>
+
+      <div class="accent-line fi"></div>
+      <span class="pill fi" style="color:var(--cream);border-color:rgba(242,237,230,0.35);">La estrategia</span>
+      <h2 class="section-title fi" style="color:var(--cream);margin-bottom:36px;">A quién le hablamos</h2>
+
+      <div class="buyer-card fi">
+        <div class="buyer-col">
+          <div class="buyer-item">
+            <span class="bk">Edad</span>
+            <span class="bv">41–55 años</span>
+          </div>
+          <div class="buyer-item">
+            <span class="bk">Zona</span>
+            <span class="bv">La Plata · Gonnet · City Bell</span>
+          </div>
+          <div class="buyer-item">
+            <span class="bk">Perfil</span>
+            <span class="bv">Profesional con poder de compra</span>
+          </div>
+          <div class="buyer-item">
+            <span class="bk">Estilo</span>
+            <span class="bv">Afín al diseño y el buen gusto</span>
+          </div>
+        </div>
+        <div class="buyer-col">
+          <div style="margin-bottom:18px;">
+            <div class="buyer-sub">Por qué elige BOR</div>
+            <ul class="buyer-ul">
+              <li>Trayectoria comprobada en el mercado</li>
+              <li>Diseño diferencial escandinavo</li>
+              <li>Gestión integral sin estrés</li>
+              <li>Confianza desde el primer contacto</li>
+            </ul>
+          </div>
+          <div>
+            <div class="buyer-sub">Qué la frena</div>
+            <ul class="buyer-ul">
+              <li>Miedo al caos de la obra</li>
+              <li>No saber por dónde empezar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <span class="emotional fi">El objetivo es enamorarla antes de que nos busque.</span>
+
+      <div class="accent-line fi"></div>
+      <h3 class="fi" style="font-family:'Barlow',sans-serif;font-weight:900;font-size:clamp(20px,3vw,30px);color:var(--cream);margin-bottom:20px;">Los 5 pilares de contenido</h3>
+
+      <div class="pilares-grid fi">
+        <div class="pilar-card">
+          <div class="pilar-hd" onclick="togglePilar(this)">
+            <span class="pilar-num">01</span>
+            <div class="pilar-ln"></div>
+            <span class="pilar-nm">Inspiración</span>
+            <span class="pilar-pct">40%</span>
+            <div class="p-arrow">↓</div>
+          </div>
+          <div class="pilar-bd">
+            <div class="pilar-ct">
+              <div class="pilar-desc"> Recorridos, Renders, fotos de proyectos terminados, detalles estéticos. Enamora antes de vender.</div>
+              <div class="pilar-ex">Ej: "Así se siente vivir en una casa BOR" · Detalles de luz natural · Materiales y texturas · Situaciones cotidianas.</div>
+            </div>
+          </div>
+        </div>
+        <div class="pilar-card">
+          <div class="pilar-hd" onclick="togglePilar(this)">
+            <span class="pilar-num">02</span>
+            <div class="pilar-ln"></div>
+            <span class="pilar-nm">Proceso</span>
+            <span class="pilar-pct">25%</span>
+            <div class="p-arrow">↓</div>
+          </div>
+          <div class="pilar-bd">
+            <div class="pilar-ct">
+              <div class="pilar-desc">Detrás de escena, avances con narrativa emocional. Humaniza la marca y genera confianza.</div>
+              <div class="pilar-ex">Ej: "De lote vacío a hogar" · El equipo trabajando · Decisiones de diseño en tiempo real</div>
+            </div>
+          </div>
+        </div>
+        <div class="pilar-card">
+          <div class="pilar-hd" onclick="togglePilar(this)">
+            <span class="pilar-num">03</span>
+            <div class="pilar-ln"></div>
+            <span class="pilar-nm">Educación</span>
+            <span class="pilar-pct">20%</span>
+            <div class="p-arrow">↓</div>
+          </div>
+          <div class="pilar-bd">
+            <div class="pilar-ct">
+              <div class="pilar-desc">Posiciona a BOR como experto confiable. Contenido de valor real que la audiencia guarda.</div>
+              <div class="pilar-ex">Ej: "Por qué el llave en mano te ahorra dinero" · "Cómo elegir un lote" · Mitos de la construcción</div>
+            </div>
+          </div>
+        </div>
+        <div class="pilar-card">
+          <div class="pilar-hd" onclick="togglePilar(this)">
+            <span class="pilar-num">04</span>
+            <div class="pilar-ln"></div>
+            <span class="pilar-nm">Confianza</span>
+            <span class="pilar-pct">10%</span>
+            <div class="p-arrow">↓</div>
+          </div>
+          <div class="pilar-bd">
+            <div class="pilar-ct">
+              <div class="pilar-desc">Testimonios, trayectoria, antes y después. Construye credibilidad con evidencia concreta.</div>
+              <div class="pilar-ex">Ej: Clientes contando su experiencia · Proyectos completados · 10+ años en el mercado</div>
+            </div>
+          </div>
+        </div>
+        <div class="pilar-card">
+          <div class="pilar-hd" onclick="togglePilar(this)">
+            <span class="pilar-num">05</span>
+            <div class="pilar-ln"></div>
+            <span class="pilar-nm">Identidad</span>
+            <span class="pilar-pct">5%</span>
+            <div class="p-arrow">↓</div>
+          </div>
+          <div class="pilar-bd">
+            <div class="pilar-ct">
+              <div class="pilar-desc">Valores de marca, inspiración japandi-minimalista. Comunica quiénes son más allá de la obra.</div>
+              <div class="pilar-ex">Ej: "En BOR creemos que..." · Mood japandi · Paleta y naturaleza como identidad visual</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accent-line fi" style="margin-top:8px;"></div>
+      <h3 class="fi" style="font-family:'Barlow',sans-serif;font-weight:900;font-size:clamp(18px,2.8vw,26px);color:var(--cream);margin-bottom:18px;">Reglas del nuevo feed</h3>
+
+      <div class="rules-grid fi">
+        <div class="rule-item"><span class="r-chk">✓</span><span class="r-text">Solo luz natural</span></div>
+        <div class="rule-item"><span class="r-chk">✓</span><span class="r-text">Sin planos técnicos en feed</span></div>
+        <div class="rule-item"><span class="r-chk">✓</span><span class="r-text">Vegetación siempre presente</span></div>
+        <div class="rule-item"><span class="r-chk">✓</span><span class="r-text">1 post oscuro cada 3</span></div>
+        <div class="rule-item"><span class="r-chk">✓</span><span class="r-text">Paleta cálida sin saturar</span></div>
+        <div class="rule-item"><span class="r-chk">✓</span><span class="r-text">Barlow + Cormorant en piezas gráficas (a definir)</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       S8 – ROADMAP
+       ════════════════════════════════════ -->
+  <section id="roadmap" class="bg-cream">
+    <div class="section-inner">
+      <div class="accent-line fi"></div>
+      <h2 class="section-title fi" style="color:var(--carbon);margin-bottom:6px;">El camino</h2>
+      <p class="fi" style="font-weight:300;font-size:13px;color:var(--carbon);opacity:0.5;">4 fases hasta Abril 2027</p>
+
+      <div class="tl fi">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-box">
+            <div class="tl-phase">Fase 1 · Mayo 2026</div>
+            <div class="tl-ttl">Fundación</div>
+            <div class="tl-desc">Reorganizar feed, guía de estilo, plantillas Canva, activar nuevo branding.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-box">
+            <div class="tl-phase">Fase 2 · Jun–Ago 2026</div>
+            <div class="tl-ttl">Activación</div>
+            <div class="tl-desc">Nuevo contenido en escala, calendario mensual, primeros resultados.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-box">
+            <div class="tl-phase">Fase 3 · Sep–Dic 2026</div>
+            <div class="tl-ttl">Crecimiento</div>
+            <div class="tl-desc">Optimización por métricas, reels en escala, análisis mensual.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-box">
+            <div class="tl-phase">Fase 4 · Abr 2027</div>
+            <div class="tl-ttl">Conversión</div>
+            <div class="tl-desc">Campaña lanzamiento 2 casas nuevas. Base de prospectos lista.</div>
+            <span class="tl-badge">✳ Fecha clave del cliente</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       S9 – ONBOARDING
+       ════════════════════════════════════ -->
+  <section id="onboarding" class="bg-carbon">
+    <div class="section-inner">
+      <span class="pill fi" style="color:var(--cream);border-color:rgba(242,237,230,0.35);">Primer mes · Onboarding</span>
+      <h2 class="section-title fi" style="color:var(--cream);margin-bottom:8px;">Antes de arrancar,<br>ordenamos la casa</h2>
+      <p class="fi" style="font-weight:300;font-size:13px;color:var(--cream);opacity:0.45;">El mes 1 es diferente. Sin esta base, el contenido no funciona.</p>
+
+      <div class="onb-card fi">
+        <p class="fi" style="font-weight:300;font-size:13px;color:var(--cream);opacity:0.45;">Lineamientos de identidad de marca para redes</p>
+        <ul class="onb-ul">
+          <li>Auditoría completa del perfil Instagram</li>
+          <li>Reorganización del feed existente</li>
+          <li>Guía de estilo visual completa</li>
+          <li>3 plantillas Canva base (post, carrusel, story)</li>
+          <li>Calendario editorial del primer mes</li>
+          <li>Definición de voz y tono definitivos</li>
+        </ul>
+        <div class="onb-price">$360.000 ARS</div>
+        <div class="onb-note">Cargo único · No se repite los meses siguientes</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       S10 – LOS PACKS
+       ════════════════════════════════════ -->
+  <section id="propuesta" class="bg-cream">
+    <div class="section-inner">
+      <div class="deco-number" style="color:var(--carbon);">05</div>
+
+      <div class="accent-line fi"></div>
+      <span class="pill fi" style="color:var(--carbon);">La propuesta comercial</span>
+      <h2 class="section-title fi" style="color:var(--carbon);margin-bottom:36px;">Elegí el plan que se adapta<br>a tu objetivo</h2>
+
+      <div class="packs-grid fi">
+        <div class="pack">
+          <div class="pack-lbl">Plan</div>
+          <div class="pack-nm">Starter</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:15px;color:var(--terra);margin-bottom:12px;line-height:1.4;">Para empezar a generar presencia con contenido de calidad.</div>
+          <div class="pack-cnt">6 Reels · 2 Carruseles / mes</div>
+          <div class="pack-price">$620 USD/mes</div>
+
+          <ul class="pack-ul">
+            <li>Calendario estratégico mensual</li>
+            <li>Edición + narrativa</li>
+            <li>Copy + CTA</li>
+            <li>Producción de contenido</li>
+            <li>Diseño de graficas</li>
+            <li>Optimización de publicación</li>
+            <li>Reporte mensual de rendimiento</li>
+          </ul>
+          <button class="pack-btn" onclick="choosePlan('Starter', this)">Elegir Starter ↗</button>
+          <div class="pack-msg"></div>
+        </div>
+
+        <div class="pack feat">
+          <div class="pack-badge">Más elegido</div>
+          <div class="pack-lbl">Plan</div>
+          <div class="pack-nm">Growth</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:15px;color:var(--terra);margin-bottom:12px;line-height:1.4;">Para crecer con estrategia, constancia y mejores resultados.</div>
+          <div class="pack-cnt">8 Reels · 4 Carruseles · 4 Historias interactivas / mes</div>
+          <div class="pack-price">$950 USD/mes</div>
+
+          <ul class="pack-ul">
+            <li>Todo lo del Starter</li> 
+            <li>Historias interactivas</li>
+            <li>Reporte semanal de rendimiento</li>
+            <li>Análisis mensual con insights y optimización de contenido</li>
+          </ul>
+          <button class="pack-btn" onclick="choosePlan('Growth', this)">Elegir Growth ↗</button>
+          <div class="pack-msg"></div>
+        </div>
+
+        <div class="pack">
+          <div class="pack-lbl">Plan</div>
+          <div class="pack-nm">Pro</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:15px;color:var(--terra);margin-bottom:12px;line-height:1.4;">Para escalar con contenido continuo y acompañamiento estratégico.</div>
+          <div class="pack-cnt">12 Reels · 8 Carruseles · 4 Historias interactivas / mes</div>
+          <div class="pack-price">$1.200 USD/mes</div>
+
+          <ul class="pack-ul">
+            <li>Todo lo del Growth</li>
+            <li>Ajustes continuos basados en performance</li>
+            <li>Reunión estratégica mensual 30-45min</li>
+          </ul>
+          <button class="pack-btn" onclick="choosePlan('Pro', this)">Elegir Pro ↗</button>
+          <div class="pack-msg"></div>
+        </div>
+      </div>
+
+      <p class="pack-note fi"> Fotografía y video incluido en todos los packs.</p>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       S11 – CIERRE
+       ════════════════════════════════════ -->
+  <section id="cierre" class="bg-carbon">
+    <div class="section-inner">
+      <h2 class="section-title fi" style="color:var(--cream);margin-bottom:36px;">¿Cómo empezamos?</h2>
+
+      <div class="steps-row fi">
+        <div>
+          <div class="step-num">01</div>
+          <div class="step-text">Elegís el plan que mejor se adapta</div>
+        </div>
+        <div>
+          <div class="step-num">02</div>
+          <div class="step-text">Arrancamos con el mes de onboarding<br><span style="color:var(--terra);">$360.000 ARS, cargo único</span></div>
+        </div>
+        <div>
+          <div class="step-num">03</div>
+          <div class="step-text">Primer contenido nuevo en el feed en 2 semanas</div>
+        </div>
+      </div>
+
+      <div class="cierre-sep"></div>
+
+      <div class="cierre-quote fi">
+        <span class="cierre-ph">"Diseñar bien no es un lujo. Es una decisión."</span>
+        <div class="cierre-contact">
+          <span class="ct-item">karenkairiyama@gmail.com</span>
+          <div class="ct-sep"></div>
+          <span class="ct-item">@karenkairiyama</span>
+          <div class="ct-sep"></div>
+          <span class="ct-item">Buenos Aires, Argentina</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // ── PROGRESS BAR ──
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const pct = h.scrollHeight - h.clientHeight > 0
+        ? (window.scrollY / (h.scrollHeight - h.clientHeight)) * 100
+        : 0;
+      document.getElementById('progress-bar').style.width = pct + '%';
+    });
+
+    // ── SMOOTH SCROLL ──
+    function goTo(id) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // ── EXPANDABLE — competitors ──
+    function toggleExp(hd) {
+      const body  = hd.nextElementSibling;
+      const arrow = hd.querySelector('.exp-arrow');
+      body.classList.toggle('open');
+      arrow.classList.toggle('open');
+    }
+
+    // ── EXPANDABLE — pilares ──
+    function togglePilar(hd) {
+      const body  = hd.nextElementSibling;
+      const arrow = hd.querySelector('.p-arrow');
+      body.classList.toggle('open');
+      arrow.classList.toggle('open');
+    }
+
+    // ── PACK SELECTION ──
+    function choosePlan(name, btn) {
+      const msg = btn.nextElementSibling;
+      msg.textContent = '¡Excelente elección! Escribinos para arrancar con el plan ' + name + '.';
+      msg.style.display = 'block';
+      msg.style.opacity = '0';
+      msg.style.transition = 'opacity 0.4s ease';
+      requestAnimationFrame(() => requestAnimationFrame(() => { msg.style.opacity = '1'; }));
+    }
+
+    // ── FADE-IN (IntersectionObserver) ──
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fi').forEach(el => io.observe(el));
+
+    // ── COUNTER ANIMATION ──
+    function runCounter(el) {
+      const target   = parseInt(el.dataset.target, 10);
+      const prefix   = el.dataset.prefix || '';
+      const duration = 1200;
+      const start    = performance.now();
+      const tick = now => {
+        const t = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - t, 3);
+        el.textContent = prefix + Math.round(eased * target).toLocaleString('es-AR');
+        if (t < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    }
+
+    const cio = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting && e.target.dataset.target) {
+          runCounter(e.target);
+          cio.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-target]').forEach(el => cio.observe(el));
+
+    // ── GIRO STAGGERED ANIMATIONS ──
+    const giroTrigger = document.getElementById('giro-trigger');
+    const giroDiv     = document.getElementById('giro-div');
+    const giroAfter   = document.getElementById('giro-after');
+    const giroCloser  = document.getElementById('giro-closer');
+
+    const giroIO = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          giroTrigger.classList.add('on');
+          giroDiv.classList.add('on');
+          giroAfter.classList.add('on');
+          giroCloser.classList.add('on');
+          giroIO.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    if (giroTrigger) giroIO.observe(giroTrigger);
+
+    // ── PRE-PRINT: resolver contadores, desplegables y fade-ins ──
+    window.onbeforeprint = function() {
+      document.querySelectorAll('[data-target]').forEach(el => {
+        const prefix = el.dataset.prefix || '';
+        const target = parseInt(el.dataset.target, 10);
+        el.textContent = prefix + target.toLocaleString('es-AR');
+      });
+      document.querySelectorAll('.exp-body, .pilar-bd').forEach(el => {
+        el.classList.add('open');
+      });
+      document.querySelectorAll('.fi').forEach(el => el.classList.add('on'));
+      document.querySelectorAll('.giro-before, .giro-divider, .giro-after, .giro-closer')
+        .forEach(el => el.classList.add('on'));
+    };
+  </script>
+</body>
+</html>
