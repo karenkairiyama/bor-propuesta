@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,20 @@
     @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Cormorant+Garamond:ital,wght@1,300&display=swap');
 
     :root {
-      --cream:  #F2EDE6;
+      --cream: #F2EDE6;
       --carbon: #2C2826;
-      --terra:  #C4956A;
-      --moss:   #7A8C6E;
-      --white:  #FAFAF8;
+      --terra: #C4956A;
+      --moss: #7A8C6E;
+      --white: #FAFAF8;
     }
 
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
       font-family: 'Barlow', sans-serif;
@@ -29,7 +36,8 @@
     /* ── PROGRESS BAR ── */
     #progress-bar {
       position: fixed;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       height: 3px;
       width: 0%;
       background: var(--terra);
@@ -101,17 +109,31 @@
       transform: translateY(24px);
       transition: opacity 0.5s ease, transform 0.5s ease;
     }
-    .fi.on { opacity: 1; transform: translateY(0); }
+
+    .fi.on {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
     /* ── SECTION BACKGROUNDS ── */
-    .bg-cream  { background: var(--cream); }
-    .bg-carbon { background: var(--carbon); }
-    .bg-white  { background: var(--white); }
+    .bg-cream {
+      background: var(--cream);
+    }
+
+    .bg-carbon {
+      background: var(--carbon);
+    }
+
+    .bg-white {
+      background: var(--white);
+    }
 
     /* ════════════════════════════════════════
        S1 – HERO
        ════════════════════════════════════════ */
-    #hero { background: var(--cream); }
+    #hero {
+      background: var(--cream);
+    }
 
     .hero-wrap {
       max-width: 860px;
@@ -128,13 +150,17 @@
     }
 
     .logo-bor {
-      width: 54px; height: 54px;
+      width: 54px;
+      height: 54px;
       border-radius: 50%;
       border: 1px solid var(--carbon);
       background: var(--cream);
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-family: 'Barlow', sans-serif;
-      font-weight: 900; font-size: 17px;
+      font-weight: 900;
+      font-size: 17px;
       color: var(--carbon);
     }
 
@@ -159,7 +185,8 @@
     }
 
     .hero-divider {
-      width: 100%; height: 1px;
+      width: 100%;
+      height: 1px;
       background: var(--terra);
       margin-bottom: 28px;
     }
@@ -170,19 +197,34 @@
       gap: 0;
     }
 
-    .hero-stat { flex: 1; padding: 0 20px; text-align: center; }
-    .hero-stat:first-child { padding-left: 0; text-align: left; }
-    .hero-stat:last-child  { padding-right: 0; text-align: right; }
+    .hero-stat {
+      flex: 1;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .hero-stat:first-child {
+      padding-left: 0;
+      text-align: left;
+    }
+
+    .hero-stat:last-child {
+      padding-right: 0;
+      text-align: right;
+    }
 
     .hero-stat-val {
       font-family: 'Barlow', sans-serif;
-      font-weight: 700; font-size: 13px;
+      font-weight: 700;
+      font-size: 13px;
       color: var(--carbon);
     }
 
     .hero-stat-sep {
-      width: 1px; height: 28px;
-      background: var(--carbon); opacity: 0.18;
+      width: 1px;
+      height: 28px;
+      background: var(--carbon);
+      opacity: 0.18;
     }
 
     .hero-arrow {
@@ -193,28 +235,45 @@
     }
 
     .arrow-circle {
-      width: 40px; height: 40px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       border: 1px solid var(--carbon);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 16px; color: var(--carbon); opacity: 0.45;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: var(--carbon);
+      opacity: 0.45;
     }
 
     @keyframes bounce {
-      0%,100% { transform: translateY(0); }
-      50%      { transform: translateY(8px); }
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(8px);
+      }
     }
 
     /* ════════════════════════════════════════
        S2 – ÍNDICE
        ════════════════════════════════════════ */
-    #indice { background: var(--carbon); }
+    #indice {
+      background: var(--carbon);
+    }
 
     .index-lbl {
       font-family: 'Barlow', sans-serif;
-      font-weight: 300; font-size: 12px;
-      color: var(--cream); opacity: 0.45;
-      text-transform: uppercase; letter-spacing: 0.14em;
+      font-weight: 300;
+      font-size: 12px;
+      color: var(--cream);
+      opacity: 0.45;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
       margin-bottom: 28px;
     }
 
@@ -225,7 +284,7 @@
     }
 
     .index-card {
-      border: 0.5px solid rgba(242,237,230,0.15);
+      border: 0.5px solid rgba(242, 237, 230, 0.15);
       border-radius: 6px;
       padding: 22px 22px 44px;
       cursor: pointer;
@@ -238,26 +297,54 @@
       transform: scale(1.02);
     }
 
-    .ic-num  { font-weight: 700; font-size: 10px; color: var(--terra); letter-spacing: 0.1em; margin-bottom: 8px; }
-    .ic-title{ font-weight: 700; font-size: 15px; color: var(--cream); margin-bottom: 4px; }
-    .ic-desc { font-weight: 300; font-size: 11px; color: var(--cream); opacity: 0.45; }
+    .ic-num {
+      font-weight: 700;
+      font-size: 10px;
+      color: var(--terra);
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+
+    .ic-title {
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--cream);
+      margin-bottom: 4px;
+    }
+
+    .ic-desc {
+      font-weight: 300;
+      font-size: 11px;
+      color: var(--cream);
+      opacity: 0.45;
+    }
 
     .ic-arrow {
-      position: absolute; bottom: 14px; right: 14px;
-      width: 24px; height: 24px; border-radius: 50%;
-      border: 0.5px solid rgba(242,237,230,0.25);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 11px; color: var(--cream); opacity: 0.45;
+      position: absolute;
+      bottom: 14px;
+      right: 14px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 0.5px solid rgba(242, 237, 230, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      color: var(--cream);
+      opacity: 0.45;
     }
 
     /* ════════════════════════════════════════
        S3 – DIAGNÓSTICO
        ════════════════════════════════════════ */
-    #diagnostico { background: var(--cream); }
+    #diagnostico {
+      background: var(--cream);
+    }
 
     .metric-grid {
       display: grid;
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 14px;
       margin-bottom: 48px;
     }
@@ -279,21 +366,29 @@
     }
 
     .metric-lbl {
-      font-size: 10px; font-weight: 300;
-      color: var(--terra); text-transform: uppercase;
+      font-size: 10px;
+      font-weight: 300;
+      color: var(--terra);
+      text-transform: uppercase;
       letter-spacing: 0.1em;
-      display: block; margin-bottom: 6px;
+      display: block;
+      margin-bottom: 6px;
     }
 
     .metric-note {
-      font-size: 10px; font-weight: 300;
-      color: var(--cream); opacity: 0.35;
+      font-size: 10px;
+      font-weight: 300;
+      color: var(--cream);
+      opacity: 0.35;
     }
 
     .prob-title {
-      font-weight: 700; font-size: 10px;
-      text-transform: uppercase; letter-spacing: 0.1em;
-      color: var(--carbon); opacity: 0.5;
+      font-weight: 700;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--carbon);
+      opacity: 0.5;
       margin-bottom: 14px;
     }
 
@@ -308,26 +403,45 @@
       background: var(--white);
       border-radius: 6px;
       padding: 22px;
-      border: 0.5px solid rgba(44,40,38,0.09);
+      border: 0.5px solid rgba(44, 40, 38, 0.09);
     }
 
-    .prob-x    { font-size: 17px; color: #c0392b; margin-bottom: 8px; }
-    .prob-ttl  { font-weight: 700; font-size: 13px; color: var(--carbon); margin-bottom: 5px; }
-    .prob-desc { font-weight: 300; font-size: 11px; color: var(--carbon); opacity: 0.55; }
+    .prob-x {
+      font-size: 17px;
+      color: #c0392b;
+      margin-bottom: 8px;
+    }
+
+    .prob-ttl {
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--carbon);
+      margin-bottom: 5px;
+    }
+
+    .prob-desc {
+      font-weight: 300;
+      font-size: 11px;
+      color: var(--carbon);
+      opacity: 0.55;
+    }
 
     .concl {
       border-left: 3px solid var(--terra);
       padding: 18px 22px;
       background: var(--white);
       border-radius: 0 6px 6px 0;
-      font-weight: 400; font-size: 15px;
+      font-weight: 400;
+      font-size: 15px;
       color: var(--carbon);
     }
 
     /* ════════════════════════════════════════
        S4 – OBJETIVOS
        ════════════════════════════════════════ */
-    #objetivos { background: var(--carbon); }
+    #objetivos {
+      background: var(--carbon);
+    }
 
     .main-obj {
       border: 2px solid var(--terra);
@@ -336,19 +450,34 @@
       margin-bottom: 44px;
     }
 
-    .main-obj-star { font-size: 30px; color: var(--terra); display: block; margin-bottom: 14px; }
+    .main-obj-star {
+      font-size: 30px;
+      color: var(--terra);
+      display: block;
+      margin-bottom: 14px;
+    }
 
     .main-obj-ttl {
-      font-weight: 700; font-size: clamp(16px, 2.4vw, 21px);
-      color: var(--cream); margin-bottom: 10px; line-height: 1.35;
+      font-weight: 700;
+      font-size: clamp(16px, 2.4vw, 21px);
+      color: var(--cream);
+      margin-bottom: 10px;
+      line-height: 1.35;
     }
 
     .main-obj-desc {
-      font-weight: 300; font-size: 13px;
-      color: var(--cream); opacity: 0.65; line-height: 1.6;
+      font-weight: 300;
+      font-size: 13px;
+      color: var(--cream);
+      opacity: 0.65;
+      line-height: 1.6;
     }
 
-    .obj-sep { height: 1px; background: rgba(242,237,230,0.08); margin-bottom: 36px; }
+    .obj-sep {
+      height: 1px;
+      background: rgba(242, 237, 230, 0.08);
+      margin-bottom: 36px;
+    }
 
     .obj-grid {
       display: grid;
@@ -358,69 +487,101 @@
     }
 
     .obj-card {
-      background: rgba(242,237,230,0.04);
-      border: 0.5px solid rgba(242,237,230,0.09);
+      background: rgba(242, 237, 230, 0.04);
+      border: 0.5px solid rgba(242, 237, 230, 0.09);
       border-radius: 6px;
       padding: 26px 22px;
     }
 
     .obj-badge {
       display: inline-block;
-      font-size: 9px; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.1em;
-      padding: 4px 12px; border-radius: 20px;
-      background: var(--terra); color: var(--white);
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: var(--terra);
+      color: var(--white);
       margin-bottom: 14px;
     }
 
     .obj-ttl {
-      font-weight: 900; font-size: 18px;
-      color: var(--cream); margin-bottom: 4px;
+      font-weight: 900;
+      font-size: 18px;
+      color: var(--cream);
+      margin-bottom: 4px;
     }
 
     .obj-period {
-      font-size: 10px; font-weight: 300;
-      color: var(--terra); text-transform: uppercase;
-      letter-spacing: 0.1em; margin-bottom: 14px;
+      font-size: 10px;
+      font-weight: 300;
+      color: var(--terra);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 14px;
     }
 
-    .obj-ul { list-style: none; padding: 0; }
+    .obj-ul {
+      list-style: none;
+      padding: 0;
+    }
 
     .obj-ul li {
-      font-weight: 300; font-size: 12px;
-      color: var(--cream); opacity: 0.7;
+      font-weight: 300;
+      font-size: 12px;
+      color: var(--cream);
+      opacity: 0.7;
       padding: 5px 0;
-      border-bottom: 0.5px solid rgba(242,237,230,0.07);
-      display: flex; gap: 8px;
+      border-bottom: 0.5px solid rgba(242, 237, 230, 0.07);
+      display: flex;
+      gap: 8px;
     }
 
-    .obj-ul li::before { content: "✓"; color: var(--terra); font-size: 10px; flex-shrink: 0; margin-top: 1px; }
+    .obj-ul li::before {
+      content: "✓";
+      color: var(--terra);
+      font-size: 10px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
 
     .kpi-row {
-      display: grid; grid-template-columns: repeat(4,1fr);
-      background: rgba(0,0,0,0.18);
-      border-radius: 6px; overflow: hidden;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: rgba(0, 0, 0, 0.18);
+      border-radius: 6px;
+      overflow: hidden;
     }
 
     .kpi-cell {
-      padding: 18px 12px; text-align: center;
-      border-right: 0.5px solid rgba(242,237,230,0.09);
+      padding: 18px 12px;
+      text-align: center;
+      border-right: 0.5px solid rgba(242, 237, 230, 0.09);
     }
-    .kpi-cell:last-child { border-right: none; }
+
+    .kpi-cell:last-child {
+      border-right: none;
+    }
 
     .kpi-lbl {
-      font-weight: 300; font-size: 10px;
-      color: var(--cream); opacity: 0.45;
-      text-transform: uppercase; letter-spacing: 0.07em;
+      font-weight: 300;
+      font-size: 10px;
+      color: var(--cream);
+      opacity: 0.45;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
     }
 
     /* ════════════════════════════════════════
        S5 – EL MERCADO
        ════════════════════════════════════════ */
-    #mercado { background: var(--cream); }
+    #mercado {
+      background: var(--cream);
+    }
 
     .exp-card {
-      border: 0.5px solid rgba(44,40,38,0.13);
+      border: 0.5px solid rgba(44, 40, 38, 0.13);
       border-radius: 6px;
       margin-bottom: 10px;
       overflow: hidden;
@@ -428,62 +589,107 @@
 
     .exp-header {
       padding: 18px 22px;
-      display: flex; align-items: center; justify-content: space-between;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       cursor: pointer;
       background: var(--white);
       transition: background 0.2s;
     }
 
-    .exp-header:hover { background: rgba(196,149,106,0.07); }
-
-    .exp-ttl  { font-weight: 700; font-size: 14px; color: var(--carbon); }
-    .exp-sub  { font-weight: 300; font-size: 11px; color: var(--carbon); opacity: 0.45; margin-top: 2px; }
-
-    .exp-arrow {
-      width: 28px; height: 28px; border-radius: 50%;
-      border: 0.5px solid rgba(44,40,38,0.25);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 13px; color: var(--carbon);
-      transition: transform 0.3s; flex-shrink: 0;
+    .exp-header:hover {
+      background: rgba(196, 149, 106, 0.07);
     }
 
-    .exp-arrow.open { transform: rotate(180deg); }
+    .exp-ttl {
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--carbon);
+    }
+
+    .exp-sub {
+      font-weight: 300;
+      font-size: 11px;
+      color: var(--carbon);
+      opacity: 0.45;
+      margin-top: 2px;
+    }
+
+    .exp-arrow {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 0.5px solid rgba(44, 40, 38, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: var(--carbon);
+      transition: transform 0.3s;
+      flex-shrink: 0;
+    }
+
+    .exp-arrow.open {
+      transform: rotate(180deg);
+    }
 
     .exp-body {
-      max-height: 0; overflow: hidden;
+      max-height: 0;
+      overflow: hidden;
       transition: max-height 0.3s ease;
     }
 
-    .exp-body.open { max-height: 500px; }
+    .exp-body.open {
+      max-height: 500px;
+    }
 
     .exp-content {
       padding: 22px;
-      display: grid; grid-template-columns: 1fr 1fr;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 20px;
-      border-top: 0.5px solid rgba(44,40,38,0.08);
+      border-top: 0.5px solid rgba(44, 40, 38, 0.08);
       background: var(--white);
     }
 
     .exp-col-ttl {
-      font-weight: 700; font-size: 9px;
-      text-transform: uppercase; letter-spacing: 0.1em;
+      font-weight: 700;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
       margin-bottom: 10px;
     }
 
-    .exp-col-ttl.g { color: #5a8a5a; }
-    .exp-col-ttl.r { color: #b94040; }
-
-    .exp-ul { list-style: none; padding: 0; }
-
-    .exp-ul li {
-      font-weight: 300; font-size: 12px;
-      color: var(--carbon);
-      padding: 4px 0;
-      border-bottom: 0.5px solid rgba(44,40,38,0.06);
+    .exp-col-ttl.g {
+      color: #5a8a5a;
     }
 
-    .exp-ul.good li::before { content: "✓ "; color: #5a8a5a; }
-    .exp-ul.bad  li::before { content: "✗ "; color: #b94040; }
+    .exp-col-ttl.r {
+      color: #b94040;
+    }
+
+    .exp-ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .exp-ul li {
+      font-weight: 300;
+      font-size: 12px;
+      color: var(--carbon);
+      padding: 4px 0;
+      border-bottom: 0.5px solid rgba(44, 40, 38, 0.06);
+    }
+
+    .exp-ul.good li::before {
+      content: "✓ ";
+      color: #5a8a5a;
+    }
+
+    .exp-ul.bad li::before {
+      content: "✗ ";
+      color: #b94040;
+    }
 
     .insight-blk {
       background: var(--carbon);
@@ -497,25 +703,42 @@
       font-family: 'Barlow', sans-serif;
       font-weight: 300;
       font-size: clamp(20px, 3.5vw, 30px);
-      color: var(--cream); margin-bottom: 8px;
+      color: var(--cream);
+      margin-bottom: 8px;
     }
 
     .insight-emo {
       font-family: 'Cormorant Garamond', serif;
-      font-style: italic; font-weight: 300;
+      font-style: italic;
+      font-weight: 300;
       font-size: clamp(18px, 3vw, 26px);
       color: var(--terra);
     }
 
     .opp-grid {
       display: grid;
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
 
-    .opp-item { border-top: 2px solid var(--terra); padding-top: 14px; }
-    .opp-ttl  { font-weight: 700; font-size: 13px; color: var(--carbon); margin-bottom: 5px; }
-    .opp-desc { font-weight: 300; font-size: 11px; color: var(--carbon); opacity: 0.55; }
+    .opp-item {
+      border-top: 2px solid var(--terra);
+      padding-top: 14px;
+    }
+
+    .opp-ttl {
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--carbon);
+      margin-bottom: 5px;
+    }
+
+    .opp-desc {
+      font-weight: 300;
+      font-size: 11px;
+      color: var(--carbon);
+      opacity: 0.55;
+    }
 
     /* ════════════════════════════════════════
        S6 – GIRO ESTRATÉGICO
@@ -537,12 +760,19 @@
       transform: translateY(16px);
       transition: opacity 0.5s ease, transform 0.5s ease;
     }
-    .giro-before.on { opacity: 1; transform: translateY(0); }
+
+    .giro-before.on {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
     .giro-before-lbl {
-      font-weight: 300; font-size: 10px;
-      text-transform: uppercase; letter-spacing: 0.16em;
-      color: var(--cream); opacity: 0.3;
+      font-weight: 300;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--cream);
+      opacity: 0.3;
       margin-bottom: 10px;
     }
 
@@ -554,25 +784,40 @@
       opacity: 0.2;
       line-height: 1.1;
       text-decoration: line-through;
-      text-decoration-color: rgba(196,149,106,0.5);
+      text-decoration-color: rgba(196, 149, 106, 0.5);
       text-decoration-thickness: 1px;
     }
 
     .giro-divider {
-      display: flex; align-items: center; gap: 18px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
       margin: 44px 0;
       opacity: 0;
       transition: opacity 0.5s ease 0.3s;
     }
-    .giro-divider.on { opacity: 1; }
 
-    .giro-div-line { flex: 1; height: 1px; background: var(--terra); opacity: 0.35; }
+    .giro-divider.on {
+      opacity: 1;
+    }
+
+    .giro-div-line {
+      flex: 1;
+      height: 1px;
+      background: var(--terra);
+      opacity: 0.35;
+    }
 
     .giro-div-sym {
-      width: 38px; height: 38px; border-radius: 50%;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
       border: 1px solid var(--terra);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 15px; color: var(--terra);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      color: var(--terra);
       flex-shrink: 0;
     }
 
@@ -581,11 +826,17 @@
       transform: translateY(28px);
       transition: opacity 0.65s ease 0.45s, transform 0.65s ease 0.45s;
     }
-    .giro-after.on { opacity: 1; transform: translateY(0); }
+
+    .giro-after.on {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
     .giro-after-lbl {
-      font-weight: 300; font-size: 10px;
-      text-transform: uppercase; letter-spacing: 0.16em;
+      font-weight: 300;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
       color: var(--terra);
       margin-bottom: 12px;
     }
@@ -601,13 +852,17 @@
     .giro-closer {
       margin-top: 72px;
       padding-top: 56px;
-      border-top: 1px solid rgba(196,149,106,0.18);
+      border-top: 1px solid rgba(196, 149, 106, 0.18);
       text-align: center;
       opacity: 0;
       transform: translateY(20px);
       transition: opacity 0.7s ease 0.75s, transform 0.7s ease 0.75s;
     }
-    .giro-closer.on { opacity: 1; transform: translateY(0); }
+
+    .giro-closer.on {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
     .giro-closer-ph {
       font-family: 'Barlow', sans-serif;
@@ -620,136 +875,232 @@
     }
 
     .giro-closer-star {
-      font-size: 22px; color: var(--terra);
+      font-size: 22px;
+      color: var(--terra);
       display: inline-block;
       animation: spin-slow 8s linear infinite;
     }
 
     @keyframes spin-slow {
-      from { transform: rotate(0deg); }
-      to   { transform: rotate(360deg); }
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
     }
 
     /* ════════════════════════════════════════
        S7 – ESTRATEGIA
        ════════════════════════════════════════ */
-    #estrategia { background: var(--carbon); }
+    #estrategia {
+      background: var(--carbon);
+    }
 
     .buyer-card {
-      display: grid; grid-template-columns: 1fr 1fr;
-      border-radius: 6px; overflow: hidden;
-      border: 0.5px solid rgba(242,237,230,0.09);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 0.5px solid rgba(242, 237, 230, 0.09);
       margin-bottom: 44px;
     }
 
     .buyer-col {
       padding: 30px;
-      background: rgba(242,237,230,0.04);
+      background: rgba(242, 237, 230, 0.04);
     }
 
     .buyer-col:first-child {
-      border-right: 0.5px solid rgba(242,237,230,0.09);
+      border-right: 0.5px solid rgba(242, 237, 230, 0.09);
     }
 
-    .buyer-item { margin-bottom: 16px; }
+    .buyer-item {
+      margin-bottom: 16px;
+    }
 
     .bk {
-      font-weight: 300; font-size: 9px;
-      text-transform: uppercase; letter-spacing: 0.1em;
-      color: var(--terra); display: block; margin-bottom: 2px;
+      font-weight: 300;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--terra);
+      display: block;
+      margin-bottom: 2px;
     }
 
     .bv {
-      font-weight: 400; font-size: 13px;
+      font-weight: 400;
+      font-size: 13px;
       color: var(--cream);
     }
 
     .buyer-sub {
-      font-weight: 700; font-size: 10px;
-      text-transform: uppercase; letter-spacing: 0.1em;
-      color: var(--terra); margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--terra);
+      margin-bottom: 10px;
     }
 
-    .buyer-ul { list-style: none; padding: 0; margin-bottom: 20px; }
+    .buyer-ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
 
     .buyer-ul li {
-      font-weight: 300; font-size: 12px;
-      color: var(--cream); opacity: 0.75;
+      font-weight: 300;
+      font-size: 12px;
+      color: var(--cream);
+      opacity: 0.75;
       padding: 4px 0;
     }
 
     .pilares-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 10px; margin-bottom: 36px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 36px;
     }
 
     .pilar-card {
-      border: 0.5px solid rgba(242,237,230,0.09);
-      border-radius: 6px; overflow: hidden;
+      border: 0.5px solid rgba(242, 237, 230, 0.09);
+      border-radius: 6px;
+      overflow: hidden;
     }
 
-    .pilar-card:nth-child(5) { grid-column: 1 / -1; }
+    .pilar-card:nth-child(5) {
+      grid-column: 1 / -1;
+    }
 
     .pilar-hd {
       padding: 16px 18px;
-      display: flex; align-items: center;
+      display: flex;
+      align-items: center;
       cursor: pointer;
-      background: rgba(242,237,230,0.03);
+      background: rgba(242, 237, 230, 0.03);
       transition: background 0.2s;
     }
 
-    .pilar-hd:hover { background: rgba(196,149,106,0.1); }
+    .pilar-hd:hover {
+      background: rgba(196, 149, 106, 0.1);
+    }
 
-    .pilar-num { font-weight: 900; font-size: 10px; color: var(--terra); margin-right: 10px; }
-    .pilar-ln  { width: 18px; height: 1.5px; background: var(--terra); margin-right: 10px; flex-shrink: 0; }
-    .pilar-nm  { font-weight: 700; font-size: 13px; color: var(--cream); flex: 1; }
-    .pilar-pct { font-weight: 300; font-size: 10px; color: var(--terra); margin-right: 10px; }
+    .pilar-num {
+      font-weight: 900;
+      font-size: 10px;
+      color: var(--terra);
+      margin-right: 10px;
+    }
+
+    .pilar-ln {
+      width: 18px;
+      height: 1.5px;
+      background: var(--terra);
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    .pilar-nm {
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--cream);
+      flex: 1;
+    }
+
+    .pilar-pct {
+      font-weight: 300;
+      font-size: 10px;
+      color: var(--terra);
+      margin-right: 10px;
+    }
 
     .p-arrow {
-      width: 24px; height: 24px; border-radius: 50%;
-      border: 0.5px solid rgba(242,237,230,0.2);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 11px; color: var(--cream);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 0.5px solid rgba(242, 237, 230, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      color: var(--cream);
       transition: transform 0.3s;
     }
 
-    .p-arrow.open { transform: rotate(180deg); }
+    .p-arrow.open {
+      transform: rotate(180deg);
+    }
 
     .pilar-bd {
-      max-height: 0; overflow: hidden;
+      max-height: 0;
+      overflow: hidden;
       transition: max-height 0.3s ease;
     }
 
-    .pilar-bd.open { max-height: 400px; }
+    .pilar-bd.open {
+      max-height: 400px;
+    }
 
     .pilar-ct {
       padding: 14px 18px;
-      border-top: 0.5px solid rgba(242,237,230,0.07);
-      background: rgba(0,0,0,0.14);
+      border-top: 0.5px solid rgba(242, 237, 230, 0.07);
+      background: rgba(0, 0, 0, 0.14);
     }
 
-    .pilar-desc { font-weight: 300; font-size: 12px; color: var(--cream); opacity: 0.65; margin-bottom: 8px; line-height: 1.5; }
-    .pilar-ex   { font-weight: 300; font-size: 11px; color: var(--terra); opacity: 0.8; line-height: 1.5; }
+    .pilar-desc {
+      font-weight: 300;
+      font-size: 12px;
+      color: var(--cream);
+      opacity: 0.65;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .pilar-ex {
+      font-weight: 300;
+      font-size: 11px;
+      color: var(--terra);
+      opacity: 0.8;
+      line-height: 1.5;
+    }
 
     .rules-grid {
-      display: grid; grid-template-columns: repeat(3,1fr);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 10px;
     }
 
     .rule-item {
-      display: flex; gap: 10px;
+      display: flex;
+      gap: 10px;
       padding: 12px 14px;
-      background: rgba(242,237,230,0.04);
+      background: rgba(242, 237, 230, 0.04);
       border-radius: 6px;
     }
 
-    .r-chk  { color: var(--terra); font-size: 13px; flex-shrink: 0; }
-    .r-text { font-weight: 300; font-size: 12px; color: var(--cream); opacity: 0.75; }
+    .r-chk {
+      color: var(--terra);
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+
+    .r-text {
+      font-weight: 300;
+      font-size: 12px;
+      color: var(--cream);
+      opacity: 0.75;
+    }
 
     /* ════════════════════════════════════════
        S8 – ROADMAP
        ════════════════════════════════════════ */
-    #roadmap { background: var(--cream); }
+    #roadmap {
+      background: var(--cream);
+    }
 
     .tl {
       position: relative;
@@ -760,16 +1111,24 @@
     .tl::before {
       content: '';
       position: absolute;
-      left: 6px; top: 16px; bottom: 16px;
-      width: 2px; background: var(--terra);
+      left: 6px;
+      top: 16px;
+      bottom: 16px;
+      width: 2px;
+      background: var(--terra);
     }
 
-    .tl-item { position: relative; margin-bottom: 0; }
+    .tl-item {
+      position: relative;
+      margin-bottom: 0;
+    }
 
     .tl-dot {
       position: absolute;
-      left: -30px; top: 22px;
-      width: 12px; height: 12px;
+      left: -30px;
+      top: 22px;
+      width: 12px;
+      height: 12px;
       border-radius: 50%;
       background: var(--terra);
       border: 2px solid var(--cream);
@@ -779,42 +1138,58 @@
     .tl-box {
       padding: 22px 26px;
       background: var(--white);
-      border: 0.5px solid rgba(44,40,38,0.09);
+      border: 0.5px solid rgba(44, 40, 38, 0.09);
       border-radius: 6px;
       margin-bottom: 14px;
       transition: background 0.2s;
     }
 
-    .tl-box:hover { background: rgba(196,149,106,0.07); }
+    .tl-box:hover {
+      background: rgba(196, 149, 106, 0.07);
+    }
 
     .tl-phase {
-      font-weight: 700; font-size: 9px;
-      text-transform: uppercase; letter-spacing: 0.14em;
-      color: var(--terra); margin-bottom: 4px;
+      font-weight: 700;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--terra);
+      margin-bottom: 4px;
     }
 
     .tl-ttl {
-      font-weight: 900; font-size: 22px;
-      color: var(--carbon); margin-bottom: 6px;
+      font-weight: 900;
+      font-size: 22px;
+      color: var(--carbon);
+      margin-bottom: 6px;
     }
 
     .tl-desc {
-      font-weight: 300; font-size: 13px;
-      color: var(--carbon); opacity: 0.55;
+      font-weight: 300;
+      font-size: 13px;
+      color: var(--carbon);
+      opacity: 0.55;
     }
 
     .tl-badge {
-      display: inline-block; margin-top: 10px;
-      font-size: 9px; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.1em;
-      padding: 4px 12px; border-radius: 20px;
-      background: var(--carbon); color: var(--cream);
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: var(--carbon);
+      color: var(--cream);
     }
 
     /* ════════════════════════════════════════
        S9 – ONBOARDING
        ════════════════════════════════════════ */
-    #onboarding { background: var(--carbon); }
+    #onboarding {
+      background: var(--carbon);
+    }
 
     .onb-card {
       border: 2px solid var(--terra);
@@ -823,168 +1198,548 @@
       margin-top: 28px;
     }
 
-    .onb-ul { list-style: none; padding: 0; margin-bottom: 28px; }
-
-    .onb-ul li {
-      font-weight: 300; font-size: 13px;
-      color: var(--cream);
-      padding: 9px 0;
-      border-bottom: 0.5px solid rgba(242,237,230,0.09);
-      display: flex; gap: 10px;
+    .onb-ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 28px;
     }
 
-    .onb-ul li::before { content: "✓"; color: var(--terra); font-size: 12px; flex-shrink: 0; }
+    .onb-ul li {
+      font-weight: 300;
+      font-size: 13px;
+      color: var(--cream);
+      padding: 9px 0;
+      border-bottom: 0.5px solid rgba(242, 237, 230, 0.09);
+      display: flex;
+      gap: 10px;
+    }
+
+    .onb-ul li::before {
+      content: "✓";
+      color: var(--terra);
+      font-size: 12px;
+      flex-shrink: 0;
+    }
 
     .onb-price {
       font-weight: 900;
       font-size: clamp(28px, 5vw, 46px);
-      color: var(--cream); margin-bottom: 4px;
+      color: var(--cream);
+      margin-bottom: 4px;
     }
 
     .onb-note {
-      font-weight: 300; font-size: 10px;
-      color: var(--cream); opacity: 0.35;
+      font-weight: 300;
+      font-size: 10px;
+      color: var(--cream);
+      opacity: 0.35;
       letter-spacing: 0.06em;
     }
 
     /* ════════════════════════════════════════
        S10 – PACKS
        ════════════════════════════════════════ */
-    #propuesta { background: var(--cream); }
+    #propuesta {
+      background: var(--cream);
+    }
 
     .packs-grid {
-      display: grid; grid-template-columns: repeat(3,1fr);
-      gap: 18px; margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-bottom: 20px;
     }
 
     .pack {
       background: var(--white);
       border-radius: 6px;
       padding: 30px 26px;
-      border: 1px solid rgba(44,40,38,0.08);
+      border: 1px solid rgba(44, 40, 38, 0.08);
       transition: transform 0.2s, border-color 0.2s;
       position: relative;
     }
 
-    .pack:hover { transform: scale(1.02); border-color: var(--terra); }
-    .pack.feat  { border: 2px solid var(--terra); }
+    .pack:hover {
+      transform: scale(1.02);
+      border-color: var(--terra);
+    }
+
+    .pack.feat {
+      border: 2px solid var(--terra);
+    }
 
     .pack-badge {
-      position: absolute; top: -11px; left: 50%; transform: translateX(-50%);
-      background: var(--terra); color: var(--white);
-      font-size: 9px; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      padding: 4px 14px; border-radius: 20px;
+      position: absolute;
+      top: -11px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--terra);
+      color: var(--white);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 20px;
       white-space: nowrap;
     }
 
     .pack-lbl {
-      font-weight: 300; font-size: 9px;
-      text-transform: uppercase; letter-spacing: 0.14em;
-      color: var(--carbon); opacity: 0.45; margin-bottom: 4px;
+      font-weight: 300;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--carbon);
+      opacity: 0.45;
+      margin-bottom: 4px;
     }
 
     .pack-nm {
-      font-weight: 900; font-size: 34px;
-      color: var(--carbon); margin-bottom: 6px;
+      font-weight: 900;
+      font-size: 34px;
+      color: var(--carbon);
+      margin-bottom: 6px;
     }
 
     .pack-cnt {
-      font-weight: 300; font-size: 11px;
-      color: var(--carbon); opacity: 0.55;
-      padding-bottom: 18px; margin-bottom: 18px;
-      border-bottom: 0.5px solid rgba(44,40,38,0.09);
+      font-weight: 300;
+      font-size: 11px;
+      color: var(--carbon);
+      opacity: 0.55;
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+      border-bottom: 0.5px solid rgba(44, 40, 38, 0.09);
     }
 
-    .pack-price { font-weight: 900; font-size: 20px; color: var(--carbon); margin-bottom: 3px; }
-    .pack-iva   { font-weight: 300; font-size: 10px; color: var(--carbon); opacity: 0.35; margin-bottom: 18px; }
+    .pack-price {
+      font-weight: 900;
+      font-size: 20px;
+      color: var(--carbon);
+      margin-bottom: 3px;
+    }
 
-    .pack-ul { list-style: none; padding: 0; margin-bottom: 24px; }
+    .pack-iva {
+      font-weight: 300;
+      font-size: 10px;
+      color: var(--carbon);
+      opacity: 0.35;
+      margin-bottom: 18px;
+    }
+
+    .pack-ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 24px;
+    }
 
     .pack-ul li {
-      font-weight: 300; font-size: 11px;
+      font-weight: 300;
+      font-size: 11px;
       color: var(--carbon);
       padding: 5px 0;
-      border-bottom: 0.5px solid rgba(44,40,38,0.05);
-      display: flex; gap: 7px;
+      border-bottom: 0.5px solid rgba(44, 40, 38, 0.05);
+      display: flex;
+      gap: 7px;
     }
 
-    .pack-ul li::before { content: "✓"; color: var(--terra); font-size: 10px; flex-shrink: 0; }
+    .pack-ul li::before {
+      content: "✓";
+      color: var(--terra);
+      font-size: 10px;
+      flex-shrink: 0;
+    }
 
     .pack-btn {
-      width: 100%; padding: 11px 18px;
+      width: 100%;
+      padding: 11px 18px;
       background: transparent;
       border: 1px solid var(--carbon);
       border-radius: 4px;
       font-family: 'Barlow', sans-serif;
-      font-weight: 700; font-size: 12px;
-      color: var(--carbon); cursor: pointer;
+      font-weight: 700;
+      font-size: 12px;
+      color: var(--carbon);
+      cursor: pointer;
       letter-spacing: 0.05em;
       transition: background 0.2s, color 0.2s, border-color 0.2s;
     }
 
-    .pack-btn:hover { background: var(--carbon); color: var(--cream); }
-
-    .pack.feat .pack-btn {
-      background: var(--terra); border-color: var(--terra); color: var(--white);
+    .pack-btn:hover {
+      background: var(--carbon);
+      color: var(--cream);
     }
 
-    .pack.feat .pack-btn:hover { background: #b8865e; }
+    .pack.feat .pack-btn {
+      background: var(--terra);
+      border-color: var(--terra);
+      color: var(--white);
+    }
+
+    .pack.feat .pack-btn:hover {
+      background: #b8865e;
+    }
 
     .pack-msg {
       display: none;
-      font-size: 11px; font-weight: 400;
-      color: var(--terra); text-align: center;
-      margin-top: 10px; padding: 9px;
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--terra);
+      text-align: center;
+      margin-top: 10px;
+      padding: 9px;
       border: 0.5px solid var(--terra);
       border-radius: 4px;
     }
 
     .pack-note {
-      font-weight: 300; font-size: 11px;
-      color: var(--carbon); opacity: 0.4;
+      font-weight: 300;
+      font-size: 11px;
+      color: var(--carbon);
+      opacity: 0.4;
       text-align: center;
     }
 
     /* ════════════════════════════════════════
        S11 – CIERRE
        ════════════════════════════════════════ */
-    #cierre { background: var(--carbon); }
-
-    .steps-row {
-      display: grid; grid-template-columns: repeat(3,1fr);
-      gap: 24px; margin-bottom: 48px;
+    #cierre {
+      background: var(--carbon);
     }
 
-    .step-num  { font-weight: 900; font-size: 46px; color: var(--terra); opacity: 0.65; line-height: 1; margin-bottom: 10px; }
-    .step-text { font-weight: 300; font-size: 13px; color: var(--cream); opacity: 0.75; line-height: 1.5; }
+    .steps-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 48px;
+    }
 
-    .cierre-sep { height: 1px; background: var(--terra); opacity: 0.35; margin-bottom: 52px; }
+    .step-num {
+      font-weight: 900;
+      font-size: 46px;
+      color: var(--terra);
+      opacity: 0.65;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
 
-    .cierre-quote { text-align: center; }
+    .step-text {
+      font-weight: 300;
+      font-size: 13px;
+      color: var(--cream);
+      opacity: 0.75;
+      line-height: 1.5;
+    }
+
+    .cierre-sep {
+      height: 1px;
+      background: var(--terra);
+      opacity: 0.35;
+      margin-bottom: 52px;
+    }
+
+    .cierre-quote {
+      text-align: center;
+    }
 
     .cierre-ph {
       font-family: 'Cormorant Garamond', serif;
-      font-style: italic; font-weight: 300;
+      font-style: italic;
+      font-weight: 300;
       font-size: clamp(22px, 4vw, 38px);
       color: var(--terra);
-      display: block; margin-bottom: 28px;
+      display: block;
+      margin-bottom: 28px;
     }
 
     .cierre-contact {
-      display: flex; align-items: center;
+      display: flex;
+      align-items: center;
       justify-content: center;
-      gap: 24px; flex-wrap: wrap;
+      gap: 24px;
+      flex-wrap: wrap;
     }
 
-    .ct-item { font-weight: 300; font-size: 12px; color: var(--cream); opacity: 0.5; letter-spacing: 0.05em; }
-    .ct-sep  { width: 1px; height: 14px; background: var(--cream); opacity: 0.2; }
+    .ct-item {
+      font-weight: 300;
+      font-size: 12px;
+      color: var(--cream);
+      opacity: 0.5;
+      letter-spacing: 0.05em;
+    }
+
+    .ct-sep {
+      width: 1px;
+      height: 14px;
+      background: var(--cream);
+      opacity: 0.2;
+    }
+
+    /* ════════════════════════════════════════
+       WHATSAPP FLOTANTE
+       ════════════════════════════════════════ */
+    #wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 9990;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    #wa-float:hover .wa-tooltip {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .wa-tooltip {
+      background: var(--carbon);
+      color: var(--cream);
+      font-family: 'Barlow', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.04em;
+      padding: 8px 14px;
+      border-radius: 4px;
+      border: 0.5px solid rgba(242, 237, 230, 0.12);
+      white-space: nowrap;
+      opacity: 0;
+      transform: translateX(6px);
+      transition: opacity 0.25s ease, transform 0.25s ease;
+      pointer-events: none;
+    }
+
+    .wa-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #25D366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    #wa-float:hover .wa-btn {
+      transform: scale(1.08);
+      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.3);
+    }
+
+    @media print {
+      #wa-float {
+        display: none !important;
+      }
+    }
+
+    /* ════════════════════════════════════════
+       BLUR TEXT — HERO TITLE
+       ════════════════════════════════════════ */
+    .blur-word {
+      display: inline-block;
+      opacity: 0;
+      filter: blur(10px);
+      transform: translateY(-30px);
+      will-change: transform, filter, opacity;
+    }
+
+    .blur-word.animate {
+      animation: blurWordIn 0.55s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    }
+
+    @keyframes blurWordIn {
+      0% {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(-30px);
+      }
+
+      60% {
+        opacity: 0.7;
+        filter: blur(2px);
+        transform: translateY(4px);
+      }
+
+      100% {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .blur-word {
+        opacity: 1;
+        filter: none;
+        transform: none;
+      }
+
+      .blur-word.animate {
+        animation: none;
+      }
+    }
+
+    /* ════════════════════════════════════════
+       BOR CUSTOM PLAN
+       ════════════════════════════════════════ */
+    .custom-plan {
+      background: var(--carbon);
+      border-radius: 6px;
+      border-top: 3px solid var(--terra);
+      padding: 40px 36px;
+      margin-top: 24px;
+      position: relative;
+    }
+
+    .custom-plan-badge {
+      position: absolute;
+      top: -1px;
+      right: 24px;
+      background: var(--terra);
+      color: var(--white);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .custom-plan-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+    }
+
+    .custom-plan-sep {
+      height: 1px;
+      background: rgba(242, 237, 230, 0.1);
+      margin: 18px 0;
+    }
+
+    .custom-plan-items {
+      list-style: none;
+      padding: 0;
+    }
+
+    .custom-plan-items li {
+      font-weight: 300;
+      font-size: 12px;
+      color: var(--cream);
+      padding: 5px 0;
+      border-bottom: 0.5px solid rgba(242, 237, 230, 0.07);
+      display: flex;
+      gap: 8px;
+    }
+
+    .custom-plan-items li.dot::before {
+      content: "·";
+      color: var(--terra);
+      font-size: 18px;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    .custom-plan-items li.chk::before {
+      content: "✓";
+      color: var(--terra);
+      font-size: 10px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .custom-plan-items li.arr::before {
+      content: "→";
+      color: var(--terra);
+      font-size: 11px;
+      flex-shrink: 0;
+    }
+
+    .custom-plan-sub {
+      font-weight: 700;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--terra);
+      margin-bottom: 12px;
+    }
+
+    .custom-plan-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 22px;
+      background: var(--terra);
+      border: none;
+      border-radius: 4px;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      color: var(--carbon);
+      cursor: pointer;
+      letter-spacing: 0.05em;
+      transition: background 0.2s;
+    }
+
+    .custom-plan-btn:hover {
+      background: #b8865e;
+    }
+
+    /* ════════════════════════════════════════
+       LO QUE BOR TRANSMITE
+       ════════════════════════════════════════ */
+    #mensajes {
+      background: var(--cream);
+    }
+
+    .mensajes-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      margin-top: 40px;
+    }
+
+    .mensaje-box {
+      position: relative;
+      padding: 40px 36px;
+    }
+
+    .mensaje-quote-deco {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 90px;
+      line-height: 0.7;
+      color: var(--terra);
+      opacity: 0.14;
+      position: absolute;
+      top: 20px;
+      left: 22px;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .mensaje-text {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 300;
+      font-size: clamp(15px, 2vw, 19px);
+      color: var(--carbon);
+      line-height: 1.6;
+      position: relative;
+      z-index: 1;
+    }
+
+    .mensaje-solo {
+      grid-column: 1 / -1;
+      max-width: 520px;
+    }
 
     /* ════════════════════════════════════════
        RESPONSIVE
        ════════════════════════════════════════ */
     @media (max-width: 680px) {
-      .section-inner { padding: 56px 20px; }
+      .section-inner {
+        padding: 56px 20px;
+      }
 
       .metric-grid,
       .prob-grid,
@@ -996,24 +1751,79 @@
       .kpi-row,
       .exp-content,
       .opp-grid,
-      .obj-grid { grid-template-columns: 1fr; }
+      .obj-grid {
+        grid-template-columns: 1fr;
+      }
 
-      .pilar-card:nth-child(5) { grid-column: auto; }
+      .pilar-card:nth-child(5) {
+        grid-column: auto;
+      }
 
-      .hero-stats { flex-direction: column; gap: 12px; }
-      .hero-stat  { text-align: center !important; padding: 0; }
-      .hero-stat-sep { width: 28px; height: 1px; }
+      .hero-stats {
+        flex-direction: column;
+        gap: 12px;
+      }
 
-      .kpi-cell { border-right: none; border-bottom: 0.5px solid rgba(242,237,230,0.08); }
-      .kpi-cell:last-child { border-bottom: none; }
+      .hero-stat {
+        text-align: center !important;
+        padding: 0;
+      }
 
-      .tl { padding-left: 26px; }
-      .tl-dot { left: -22px; }
+      .hero-stat-sep {
+        width: 28px;
+        height: 1px;
+      }
 
-      .giro-wrap { padding: 72px 20px 80px; }
-      .giro-closer-ph { font-size: clamp(36px, 10vw, 60px); }
+      .kpi-cell {
+        border-right: none;
+        border-bottom: 0.5px solid rgba(242, 237, 230, 0.08);
+      }
 
-      .deco-number { font-size: 100px; right: 10px; }
+      .kpi-cell:last-child {
+        border-bottom: none;
+      }
+
+      .tl {
+        padding-left: 26px;
+      }
+
+      .tl-dot {
+        left: -22px;
+      }
+
+      .giro-wrap {
+        padding: 72px 20px 80px;
+      }
+
+      .giro-closer-ph {
+        font-size: clamp(36px, 10vw, 60px);
+      }
+
+      .deco-number {
+        font-size: 100px;
+        right: 10px;
+      }
+
+      .custom-plan {
+        padding: 28px 20px;
+      }
+
+      .custom-plan-inner {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .mensajes-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .mensaje-box {
+        padding: 28px 20px;
+      }
+
+      .mensaje-solo {
+        max-width: 100%;
+      }
     }
 
     /* ════════════════════════════════════════
@@ -1022,7 +1832,10 @@
     @media print {
 
       /* ── A4 portrait, márgenes verticales mínimos ── */
-      @page { size: A4 portrait; margin: 10mm 0; }
+      @page {
+        size: A4 portrait;
+        margin: 10mm 0;
+      }
 
       /* ── Colores exactos ── */
       * {
@@ -1031,14 +1844,19 @@
       }
 
       /* ── Sin animaciones ni transiciones ── */
-      *, *::before, *::after {
+      *,
+      *::before,
+      *::after {
         animation: none !important;
         transition: none !important;
       }
 
       /* ── Hacer visibles todos los fade-in ── */
       .fi,
-      .giro-before, .giro-divider, .giro-after, .giro-closer {
+      .giro-before,
+      .giro-divider,
+      .giro-after,
+      .giro-closer {
         opacity: 1 !important;
         transform: none !important;
       }
@@ -1062,7 +1880,9 @@
       .pack-msg,
       .exp-arrow,
       .p-arrow,
-      .ic-arrow { display: none !important; }
+      .ic-arrow {
+        display: none !important;
+      }
 
       /* ── Flujo continuo: sin saltos de página forzados ── */
       section {
@@ -1095,8 +1915,14 @@
       .rules-grid,
       .exp-content,
       .opp-grid,
-      .obj-grid {
+      .obj-grid,
+      .custom-plan-inner,
+      .mensajes-grid {
         grid-template-columns: 1fr !important;
+      }
+
+      .mensaje-solo {
+        max-width: 100% !important;
       }
 
       .buyer-card {
@@ -1105,7 +1931,7 @@
 
       .buyer-col:first-child {
         border-right: none !important;
-        border-bottom: 0.5px solid rgba(242,237,230,0.09) !important;
+        border-bottom: 0.5px solid rgba(242, 237, 230, 0.09) !important;
       }
 
       .index-grid {
@@ -1116,42 +1942,97 @@
         display: block !important;
       }
 
-      .pilar-card:nth-child(5) { grid-column: auto !important; }
+      .pilar-card:nth-child(5) {
+        grid-column: auto !important;
+      }
 
       /* ── Hero stats vertical ── */
-      .hero-stats { flex-direction: column !important; gap: 12px !important; }
-      .hero-stat  { text-align: center !important; padding: 0 !important; }
-      .hero-stat-sep { width: 28px !important; height: 1px !important; }
+      .hero-stats {
+        flex-direction: column !important;
+        gap: 12px !important;
+      }
+
+      .hero-stat {
+        text-align: center !important;
+        padding: 0 !important;
+      }
+
+      .hero-stat-sep {
+        width: 28px !important;
+        height: 1px !important;
+      }
 
       /* ── KPI cells: bordes horizontales ── */
       .kpi-cell {
         border-right: none !important;
-        border-bottom: 0.5px solid rgba(242,237,230,0.08) !important;
+        border-bottom: 0.5px solid rgba(242, 237, 230, 0.08) !important;
       }
-      .kpi-cell:last-child { border-bottom: none !important; }
+
+      .kpi-cell:last-child {
+        border-bottom: none !important;
+      }
 
       /* ── Timeline ── */
-      .tl { padding-left: 26px !important; }
-      .tl-dot { left: -22px !important; }
+      .tl {
+        padding-left: 26px !important;
+      }
+
+      .tl-dot {
+        left: -22px !important;
+      }
 
       /* ── Números decorativos ── */
-      .deco-number { font-size: 100px !important; right: 10px !important; }
+      .deco-number {
+        font-size: 100px !important;
+        right: 10px !important;
+      }
 
       /* ── Evitar cortes solo dentro de cards individuales ── */
-      .metric-card, .prob-card, .obj-card, .index-card,
-      .exp-card, .pilar-card, .tl-box, .pack,
-      .onb-card, .main-obj, .insight-blk,
-      .opp-item, .rule-item,
-      h1, h2, h3 {
+      .metric-card,
+      .prob-card,
+      .obj-card,
+      .index-card,
+      .exp-card,
+      .pilar-card,
+      .tl-box,
+      .pack,
+      .onb-card,
+      .main-obj,
+      .insight-blk,
+      .opp-item,
+      .rule-item,
+      .custom-plan,
+      .mensaje-box,
+      h1,
+      h2,
+      h3 {
         page-break-inside: avoid !important;
         break-inside: avoid !important;
       }
     }
   </style>
 </head>
+
 <body>
 
   <div id="progress-bar"></div>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a id="wa-float"
+    href="https://wa.me/5493764131457?text=Hola%21%20Estoy%20viendo%20la%20propuesta%20de%20BOR%20Estudio%20y%20tengo%20una%20consulta."
+    target="_blank" rel="noopener">
+    <span class="wa-tooltip">¿Tenés alguna duda? Escribinos</span>
+    <div class="wa-btn">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M16 2C8.268 2 2 8.268 2 16c0 2.478.675 4.8 1.85 6.79L2 30l7.43-1.82A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Z"
+          fill="white" />
+        <path
+          d="M23.07 19.4c-.32-.16-1.9-.94-2.2-1.04-.3-.1-.52-.16-.73.16-.21.32-.83 1.04-1.02 1.26-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.1-.21.05-.4-.03-.56-.08-.16-.73-1.76-1-2.41-.26-.63-.53-.54-.73-.55-.19-.01-.4-.01-.62-.01-.21 0-.56.08-.85.4-.3.32-1.13 1.1-1.13 2.68 0 1.58 1.16 3.11 1.32 3.32.16.21 2.28 3.48 5.52 4.88.77.33 1.37.53 1.84.68.77.24 1.48.21 2.03.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.3-.21-.62-.37Z"
+          fill="#25D366" />
+      </svg>
+    </div>
+  </a>
 
   <!-- ════════════════════════════════════
        S1 – HERO
@@ -1162,17 +2043,25 @@
         <div class="logo-bor">Bör</div>
         <span class="pill" style="color:var(--carbon);">Propuesta estratégica · 2026</span>
       </div>
-      <h1 class="hero-display fi">Estrategia de posicionamiento Instagram</h1>
-      <p class="hero-sub fi">BOR Estudio · La Plata · Gonnet · City Bell</p>
+      <h1 class="hero-display fi">Estrategia de posicionamiento para BOR</h1>
+      <p class="hero-sub fi">Diseñamos, gestionamos y acompañamos tu proyecto — de principio a fin.</p>
       <div class="hero-divider fi"></div>
       <div class="hero-stats fi">
-        <div class="hero-stat"><div class="hero-stat-val">7.185 seguidores</div></div>
+        <div class="hero-stat">
+          <div class="hero-stat-val">+7.000 personas que siguen a BOR</div>
+        </div>
         <div class="hero-stat-sep"></div>
-        <div class="hero-stat"><div class="hero-stat-val">+10 años de trayectoria</div></div>
+        <div class="hero-stat">
+          <div class="hero-stat-val">+10 años de experiencia en desarrollo inmobiliario</div>
+        </div>
         <div class="hero-stat-sep"></div>
-        <div class="hero-stat"><div class="hero-stat-val">Mayo 2026</div></div>
+        <div class="hero-stat">
+          <div class="hero-stat-val">Propuesta estratégica · 2026</div>
+        </div>
       </div>
-      <div class="hero-arrow fi"><div class="arrow-circle">↓</div></div>
+      <div class="hero-arrow fi">
+        <div class="arrow-circle">↓</div>
+      </div>
     </div>
   </section>
 
@@ -1241,7 +2130,7 @@
         </div>
         <div class="metric-card">
           <span class="metric-val" data-target="10" data-prefix="+">0</span>
-          <span class="metric-lbl">años de trayectoria</span>
+          <span class="metric-lbl">años de experiencia en desarrollo inmobiliario</span>
           <span class="metric-note">aval real en el mercado</span>
         </div>
       </div>
@@ -1283,8 +2172,10 @@
 
       <div class="main-obj fi">
         <span class="main-obj-star">✳</span>
-        <div class="main-obj-ttl">Posicionar BOR como la marca de referencia en diseño y desarrollo inmobiliario en La Plata, Gonnet y City Bell</div>
-        <div class="main-obj-desc">Conectando especialmente con mujeres que lideran la decisión de construir y buscan una experiencia sin complicaciones.</div>
+        <div class="main-obj-ttl">Posicionar a BOR como una desarrolladora de casas de diseño en La Plata, Gonnet y City
+          Bell</div>
+        <div class="main-obj-desc">Acompañando a quienes eligen construir su proyecto con claridad, confianza y sin
+          ocuparse del proceso.</div>
       </div>
 
       <div class="obj-sep"></div>
@@ -1326,10 +2217,18 @@
       </div>
 
       <div class="kpi-row fi">
-        <div class="kpi-cell"><div class="kpi-lbl">Seguidores nuevos/mes</div></div>
-        <div class="kpi-cell"><div class="kpi-lbl">Alcance de Reels</div></div>
-        <div class="kpi-cell"><div class="kpi-lbl">Posts guardados</div></div>
-        <div class="kpi-cell"><div class="kpi-lbl">DMs recibidos</div></div>
+        <div class="kpi-cell">
+          <div class="kpi-lbl">Seguidores nuevos/mes</div>
+        </div>
+        <div class="kpi-cell">
+          <div class="kpi-lbl">Alcance de Reels</div>
+        </div>
+        <div class="kpi-cell">
+          <div class="kpi-lbl">Posts guardados</div>
+        </div>
+        <div class="kpi-cell">
+          <div class="kpi-lbl">DMs recibidos</div>
+        </div>
       </div>
     </div>
   </section>
@@ -1464,7 +2363,8 @@
        ════════════════════════════════════ -->
   <section id="giro">
     <div class="giro-wrap">
-      <span class="pill" style="color:rgba(242,237,230,0.35);border-color:rgba(242,237,230,0.18);">El giro estratégico</span>
+      <span class="pill" style="color:rgba(242,237,230,0.35);border-color:rgba(242,237,230,0.18);">El giro
+        estratégico</span>
 
       <div class="giro-before" id="giro-trigger">
         <div class="giro-before-lbl">Lo que hacen todos</div>
@@ -1479,7 +2379,7 @@
 
       <div class="giro-after" id="giro-after">
         <div class="giro-after-lbl">Lo que puede hacer BOR</div>
-        <div class="giro-after-ph">"Mirá lo fácil que hago<br>que tengas tu casa"</div>
+        <div class="giro-after-ph">Nos encargamos del proceso,<br>para que vos puedas disfrutar el resultado.</div>
       </div>
 
       <div class="giro-closer" id="giro-closer">
@@ -1542,7 +2442,9 @@
       <span class="emotional fi">El objetivo es enamorarla antes de que nos busque.</span>
 
       <div class="accent-line fi"></div>
-      <h3 class="fi" style="font-family:'Barlow',sans-serif;font-weight:900;font-size:clamp(20px,3vw,30px);color:var(--cream);margin-bottom:20px;">Los 5 pilares de contenido</h3>
+      <h3 class="fi"
+        style="font-family:'Barlow',sans-serif;font-weight:900;font-size:clamp(20px,3vw,30px);color:var(--cream);margin-bottom:20px;">
+        Los 5 pilares de contenido</h3>
 
       <div class="pilares-grid fi">
         <div class="pilar-card">
@@ -1555,8 +2457,10 @@
           </div>
           <div class="pilar-bd">
             <div class="pilar-ct">
-              <div class="pilar-desc"> Recorridos, Renders, fotos de proyectos terminados, detalles estéticos. Enamora antes de vender.</div>
-              <div class="pilar-ex">Ej: "Así se siente vivir en una casa BOR" · Detalles de luz natural · Materiales y texturas · Situaciones cotidianas.</div>
+              <div class="pilar-desc"> Recorridos, Renders, fotos de proyectos terminados, detalles estéticos. Enamora
+                antes de vender.</div>
+              <div class="pilar-ex">Ej: "Así se siente vivir en una casa BOR" · Detalles de luz natural · Materiales y
+                texturas · Situaciones cotidianas.</div>
             </div>
           </div>
         </div>
@@ -1570,8 +2474,10 @@
           </div>
           <div class="pilar-bd">
             <div class="pilar-ct">
-              <div class="pilar-desc">Detrás de escena, avances con narrativa emocional. Humaniza la marca y genera confianza.</div>
-              <div class="pilar-ex">Ej: "De lote vacío a hogar" · El equipo trabajando · Decisiones de diseño en tiempo real</div>
+              <div class="pilar-desc">Detrás de escena, avances con narrativa emocional. Humaniza la marca y genera
+                confianza.</div>
+              <div class="pilar-ex">Ej: "De lote vacío a hogar" · El equipo trabajando · Decisiones de diseño en tiempo
+                real</div>
             </div>
           </div>
         </div>
@@ -1585,8 +2491,10 @@
           </div>
           <div class="pilar-bd">
             <div class="pilar-ct">
-              <div class="pilar-desc">Posiciona a BOR como experto confiable. Contenido de valor real que la audiencia guarda.</div>
-              <div class="pilar-ex">Ej: "Por qué el llave en mano te ahorra dinero" · "Cómo elegir un lote" · Mitos de la construcción</div>
+              <div class="pilar-desc">Posiciona a BOR como experto confiable. Contenido de valor real que la audiencia
+                guarda.</div>
+              <div class="pilar-ex">Ej: "Por qué el llave en mano te ahorra dinero" · "Cómo elegir un lote" · Mitos de
+                la construcción</div>
             </div>
           </div>
         </div>
@@ -1600,8 +2508,10 @@
           </div>
           <div class="pilar-bd">
             <div class="pilar-ct">
-              <div class="pilar-desc">Testimonios, trayectoria, antes y después. Construye credibilidad con evidencia concreta.</div>
-              <div class="pilar-ex">Ej: Clientes contando su experiencia · Proyectos completados · 10+ años en el mercado</div>
+              <div class="pilar-desc">Testimonios, trayectoria, antes y después. Construye credibilidad con evidencia
+                concreta.</div>
+              <div class="pilar-ex">Ej: Clientes contando su experiencia · Proyectos completados · 10+ años en el
+                mercado</div>
             </div>
           </div>
         </div>
@@ -1615,15 +2525,19 @@
           </div>
           <div class="pilar-bd">
             <div class="pilar-ct">
-              <div class="pilar-desc">Valores de marca, inspiración japandi-minimalista. Comunica quiénes son más allá de la obra.</div>
-              <div class="pilar-ex">Ej: "En BOR creemos que..." · Mood japandi · Paleta y naturaleza como identidad visual</div>
+              <div class="pilar-desc">Valores de marca, inspiración japandi-minimalista. Comunica quiénes son más allá
+                de la obra.</div>
+              <div class="pilar-ex">Ej: "En BOR creemos que..." · Mood japandi · Paleta y naturaleza como identidad
+                visual</div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="accent-line fi" style="margin-top:8px;"></div>
-      <h3 class="fi" style="font-family:'Barlow',sans-serif;font-weight:900;font-size:clamp(18px,2.8vw,26px);color:var(--cream);margin-bottom:18px;">Reglas del nuevo feed</h3>
+      <h3 class="fi"
+        style="font-family:'Barlow',sans-serif;font-weight:900;font-size:clamp(18px,2.8vw,26px);color:var(--cream);margin-bottom:18px;">
+        Reglas del nuevo feed</h3>
 
       <div class="rules-grid fi">
         <div class="rule-item"><span class="r-chk">✓</span><span class="r-text">Solo luz natural</span></div>
@@ -1631,7 +2545,8 @@
         <div class="rule-item"><span class="r-chk">✓</span><span class="r-text">Vegetación siempre presente</span></div>
         <div class="rule-item"><span class="r-chk">✓</span><span class="r-text">1 post oscuro cada 3</span></div>
         <div class="rule-item"><span class="r-chk">✓</span><span class="r-text">Paleta cálida sin saturar</span></div>
-        <div class="rule-item"><span class="r-chk">✓</span><span class="r-text">Barlow + Cormorant en piezas gráficas (a definir)</span></div>
+        <div class="rule-item"><span class="r-chk">✓</span><span class="r-text">Barlow + Cormorant en piezas gráficas (a
+            definir)</span></div>
       </div>
     </div>
   </section>
@@ -1684,16 +2599,47 @@
   </section>
 
   <!-- ════════════════════════════════════
+       LO QUE BOR TRANSMITE
+       ════════════════════════════════════ -->
+  <section id="mensajes" class="bg-cream">
+    <div class="section-inner">
+      <div class="accent-line fi"></div>
+      <h2 class="section-title fi" style="color:var(--carbon);margin-bottom:6px;">Lo que BOR transmite</h2>
+      <span class="emotional fi">Cada proyecto. Cada decisión. Cada detalle.</span>
+
+      <div class="mensajes-grid fi">
+        <div class="mensaje-box">
+          <div class="mensaje-quote-deco">"</div>
+          <p class="mensaje-text">No se trata solo de construir una casa, sino de hacerlo sin preocuparte por el
+            proceso.</p>
+        </div>
+        <div class="mensaje-box">
+          <div class="mensaje-quote-deco">"</div>
+          <p class="mensaje-text">Pensado para que tengas claridad, control y tranquilidad en cada etapa.</p>
+        </div>
+        <div class="mensaje-box mensaje-solo">
+          <div class="mensaje-quote-deco">"</div>
+          <p class="mensaje-text">BOR se encarga de todo, para que vos puedas enfocarte en lo importante.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
        S9 – ONBOARDING
        ════════════════════════════════════ -->
   <section id="onboarding" class="bg-carbon">
     <div class="section-inner">
-      <span class="pill fi" style="color:var(--cream);border-color:rgba(242,237,230,0.35);">Primer mes · Onboarding</span>
-      <h2 class="section-title fi" style="color:var(--cream);margin-bottom:8px;">Antes de arrancar,<br>ordenamos la casa</h2>
-      <p class="fi" style="font-weight:300;font-size:13px;color:var(--cream);opacity:0.45;">El mes 1 es diferente. Sin esta base, el contenido no funciona.</p>
+      <span class="pill fi" style="color:var(--cream);border-color:rgba(242,237,230,0.35);">Primer mes ·
+        Onboarding</span>
+      <h2 class="section-title fi" style="color:var(--cream);margin-bottom:8px;">Antes de arrancar,<br>ordenamos la casa
+      </h2>
+      <p class="fi" style="font-weight:300;font-size:13px;color:var(--cream);opacity:0.45;">El primer mes lo diseñamos
+        juntas. Antes de publicar, cuidamos cada detalle.</p>
 
       <div class="onb-card fi">
-        <p class="fi" style="font-weight:300;font-size:13px;color:var(--cream);opacity:0.45;">Lineamientos de identidad de marca para redes</p>
+        <p class="fi" style="font-weight:300;font-size:13px;color:var(--cream);opacity:0.45;">Construimos la base desde
+          la que todo empieza a funcionar.</p>
         <ul class="onb-ul">
           <li>Auditoría completa del perfil Instagram</li>
           <li>Reorganización del feed existente</li>
@@ -1717,13 +2663,16 @@
 
       <div class="accent-line fi"></div>
       <span class="pill fi" style="color:var(--carbon);">La propuesta comercial</span>
-      <h2 class="section-title fi" style="color:var(--carbon);margin-bottom:36px;">Elegí el plan que se adapta<br>a tu objetivo</h2>
+      <h2 class="section-title fi" style="color:var(--carbon);margin-bottom:36px;">Elegí el plan que se adapta<br>a tu
+        objetivo</h2>
 
       <div class="packs-grid fi">
         <div class="pack">
           <div class="pack-lbl">Plan</div>
           <div class="pack-nm">Starter</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:15px;color:var(--terra);margin-bottom:12px;line-height:1.4;">Para empezar a generar presencia con contenido de calidad.</div>
+          <div
+            style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:15px;color:var(--terra);margin-bottom:12px;line-height:1.4;">
+            Para empezar a generar presencia con contenido de calidad.</div>
           <div class="pack-cnt">6 Reels · 2 Carruseles / mes</div>
           <div class="pack-price">$620 USD/mes</div>
 
@@ -1744,12 +2693,14 @@
           <div class="pack-badge">Más elegido</div>
           <div class="pack-lbl">Plan</div>
           <div class="pack-nm">Growth</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:15px;color:var(--terra);margin-bottom:12px;line-height:1.4;">Para crecer con estrategia, constancia y mejores resultados.</div>
+          <div
+            style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:15px;color:var(--terra);margin-bottom:12px;line-height:1.4;">
+            Para crecer con estrategia, constancia y mejores resultados.</div>
           <div class="pack-cnt">8 Reels · 4 Carruseles · 4 Historias interactivas / mes</div>
           <div class="pack-price">$950 USD/mes</div>
 
           <ul class="pack-ul">
-            <li>Todo lo del Starter</li> 
+            <li>Todo lo del Starter</li>
             <li>Historias interactivas</li>
             <li>Reporte semanal de rendimiento</li>
             <li>Análisis mensual con insights y optimización de contenido</li>
@@ -1761,7 +2712,9 @@
         <div class="pack">
           <div class="pack-lbl">Plan</div>
           <div class="pack-nm">Pro</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:15px;color:var(--terra);margin-bottom:12px;line-height:1.4;">Para escalar con contenido continuo y acompañamiento estratégico.</div>
+          <div
+            style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:15px;color:var(--terra);margin-bottom:12px;line-height:1.4;">
+            Para escalar con contenido continuo y acompañamiento estratégico.</div>
           <div class="pack-cnt">12 Reels · 8 Carruseles · 4 Historias interactivas / mes</div>
           <div class="pack-price">$1.200 USD/mes</div>
 
@@ -1775,7 +2728,66 @@
         </div>
       </div>
 
-      <p class="pack-note fi"> Fotografía y video incluido en todos los packs.</p>
+      <!-- BOR CUSTOM PLAN -->
+      <div class="custom-plan fi">
+        <div class="custom-plan-badge">Personalizado</div>
+        <div class="custom-plan-inner">
+          <div>
+            <div
+              style="font-weight:300;font-size:9px;text-transform:uppercase;letter-spacing:0.14em;color:var(--cream);opacity:0.45;margin-bottom:4px;">
+              Plan</div>
+            <div
+              style="font-family:'Barlow',sans-serif;font-weight:900;font-size:clamp(26px,4.5vw,42px);color:var(--cream);margin-bottom:16px;line-height:1.05;">
+              BOR Custom Plan</div>
+            <p style="font-weight:300;font-size:13px;color:var(--cream);opacity:0.65;line-height:1.65;margin-bottom:0;">
+              Plan personalizado diseñado en función del volumen de contenido disponible en BOR, optimizando cada
+              proyecto para generar presencia, posicionamiento y consultas sin depender de grandes volúmenes de obra.
+            </p>
+            <div class="custom-plan-sep"></div>
+            <ul class="custom-plan-items">
+              <li class="dot">7 Reels</li>
+              <li class="dot">3 Carruseles</li>
+              <li class="dot">2 Historias interactivas</li>
+            </ul>
+            <div class="custom-plan-sep"></div>
+            <div
+              style="font-family:'Barlow',sans-serif;font-weight:900;font-size:clamp(22px,3.5vw,34px);color:var(--cream);margin-bottom:4px;">
+              USD 880</div>
+            <div style="font-weight:300;font-size:10px;color:var(--cream);opacity:0.35;letter-spacing:0.06em;">/ mes
+            </div>
+            <button class="custom-plan-btn" onclick="choosePlan('BOR Custom Plan', this)">Hablar con el equipo
+              ↗</button>
+            <div class="pack-msg" style="border-color:rgba(242,237,230,0.3);color:var(--cream);"></div>
+          </div>
+          <div>
+            <div class="custom-plan-sub">Qué incluye</div>
+            <ul class="custom-plan-items">
+              <li class="chk">Producción de contenido en locación</li>
+              <li class="chk">Desarrollo conceptual y narrativa</li>
+              <li class="chk">Edición completa de video</li>
+              <li class="chk">Copywriting + CTA</li>
+              <li class="chk">Diseño de carruseles</li>
+              <li class="chk">Optimización de publicación</li>
+              <li class="chk">Reportes semanales de rendimiento</li>
+              <li class="chk">Análisis mensual con insights</li>
+              <li class="chk">Coordinación y gestión</li>
+              <li class="chk">Historias interactivas (engagement)</li>
+              <li class="chk">Reutilización estratégica del contenido</li>
+            </ul>
+            <div class="custom-plan-sep"></div>
+            <div class="custom-plan-sub">Qué se entrega</div>
+            <ul class="custom-plan-items">
+              <li class="arr">Piezas listas para publicar</li>
+              <li class="arr">Copies optimizados</li>
+              <li class="arr">Calendario de contenido (previa aprobación)</li>
+              <li class="arr">Lineamientos de comunicación</li>
+              <li class="arr">Reportes de rendimiento</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="pack-note fi" style="margin-top:20px;"> Fotografía y video incluido en todos los packs.</p>
     </div>
   </section>
 
@@ -1789,22 +2801,23 @@
       <div class="steps-row fi">
         <div>
           <div class="step-num">01</div>
-          <div class="step-text">Elegís el plan que mejor se adapta</div>
+          <div class="step-text">Elegís cómo querés que gestionemos tu presencia</div>
         </div>
         <div>
           <div class="step-num">02</div>
-          <div class="step-text">Arrancamos con el mes de onboarding<br><span style="color:var(--terra);">$360.000 ARS, cargo único</span></div>
+          <div class="step-text">Diseñamos juntas las bases del primer mes<br><span style="color:var(--terra);">$360.000
+              ARS, cargo único</span></div>
         </div>
         <div>
           <div class="step-num">03</div>
-          <div class="step-text">Primer contenido nuevo en el feed en 2 semanas</div>
+          <div class="step-text">En dos semanas, tu nueva presencia ya está activa</div>
         </div>
       </div>
 
       <div class="cierre-sep"></div>
 
       <div class="cierre-quote fi">
-        <span class="cierre-ph">"Diseñar bien no es un lujo. Es una decisión."</span>
+        <span class="cierre-ph">"Cuando confiás en BOR, el proceso desaparece.<br>Solo queda el hogar."</span>
         <div class="cierre-contact">
           <span class="ct-item">karenkairiyama@gmail.com</span>
           <div class="ct-sep"></div>
@@ -1834,7 +2847,7 @@
 
     // ── EXPANDABLE — competitors ──
     function toggleExp(hd) {
-      const body  = hd.nextElementSibling;
+      const body = hd.nextElementSibling;
       const arrow = hd.querySelector('.exp-arrow');
       body.classList.toggle('open');
       arrow.classList.toggle('open');
@@ -1842,20 +2855,24 @@
 
     // ── EXPANDABLE — pilares ──
     function togglePilar(hd) {
-      const body  = hd.nextElementSibling;
+      const body = hd.nextElementSibling;
       const arrow = hd.querySelector('.p-arrow');
       body.classList.toggle('open');
       arrow.classList.toggle('open');
     }
 
-    // ── PACK SELECTION ──
+    // ── PACK SELECTION → WhatsApp ──
+    const WA_NUMBER = '5493764131457';
+
     function choosePlan(name, btn) {
-      const msg = btn.nextElementSibling;
-      msg.textContent = '¡Excelente elección! Escribinos para arrancar con el plan ' + name + '.';
-      msg.style.display = 'block';
-      msg.style.opacity = '0';
-      msg.style.transition = 'opacity 0.4s ease';
-      requestAnimationFrame(() => requestAnimationFrame(() => { msg.style.opacity = '1'; }));
+      const messages = {
+        'Starter': 'Hola! Me interesa el Plan Starter de BOR Estudio.',
+        'Growth': 'Hola! Me interesa el Plan Growth de BOR Estudio.',
+        'Pro': 'Hola! Me interesa el Plan Pro de BOR Estudio.',
+        'BOR Custom Plan': 'Hola! Me interesa el BOR Custom Plan.'
+      };
+      const text = encodeURIComponent(messages[name] || 'Hola! Me interesa trabajar con BOR Estudio.');
+      window.open('https://wa.me/' + WA_NUMBER + '?text=' + text, '_blank');
     }
 
     // ── FADE-IN (IntersectionObserver) ──
@@ -1866,10 +2883,10 @@
 
     // ── COUNTER ANIMATION ──
     function runCounter(el) {
-      const target   = parseInt(el.dataset.target, 10);
-      const prefix   = el.dataset.prefix || '';
+      const target = parseInt(el.dataset.target, 10);
+      const prefix = el.dataset.prefix || '';
       const duration = 1200;
-      const start    = performance.now();
+      const start = performance.now();
       const tick = now => {
         const t = Math.min((now - start) / duration, 1);
         const eased = 1 - Math.pow(1 - t, 3);
@@ -1891,9 +2908,9 @@
 
     // ── GIRO STAGGERED ANIMATIONS ──
     const giroTrigger = document.getElementById('giro-trigger');
-    const giroDiv     = document.getElementById('giro-div');
-    const giroAfter   = document.getElementById('giro-after');
-    const giroCloser  = document.getElementById('giro-closer');
+    const giroDiv = document.getElementById('giro-div');
+    const giroAfter = document.getElementById('giro-after');
+    const giroCloser = document.getElementById('giro-closer');
 
     const giroIO = new IntersectionObserver(entries => {
       entries.forEach(e => {
@@ -1910,7 +2927,7 @@
     if (giroTrigger) giroIO.observe(giroTrigger);
 
     // ── PRE-PRINT: resolver contadores, desplegables y fade-ins ──
-    window.onbeforeprint = function() {
+    window.onbeforeprint = function () {
       document.querySelectorAll('[data-target]').forEach(el => {
         const prefix = el.dataset.prefix || '';
         const target = parseInt(el.dataset.target, 10);
@@ -1924,5 +2941,45 @@
         .forEach(el => el.classList.add('on'));
     };
   </script>
+  <script>
+    (function () {
+      const heroTitle = document.querySelector('#hero h1');
+      if (!heroTitle) return;
+
+      // La animación blur reemplaza el fade-in genérico del h1
+      heroTitle.classList.remove('fi');
+      heroTitle.style.opacity = '1';
+      heroTitle.style.transform = 'none';
+
+      // Envolver cada palabra en un span, preservando espacios
+      const words = heroTitle.textContent.split(/(\s+)/);
+      heroTitle.innerHTML = words.map(function (word) {
+        if (word.trim() === '') return word;
+        return '<span class="blur-word">' + word + '</span>';
+      }).join('');
+
+      const spans = heroTitle.querySelectorAll('.blur-word');
+
+      function triggerAnimation() {
+        spans.forEach(function (span, index) {
+          setTimeout(function () {
+            span.classList.add('animate');
+          }, index * 120);
+        });
+      }
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            triggerAnimation();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      observer.observe(heroTitle);
+    })();
+  </script>
 </body>
+
 </html>
